@@ -32,15 +32,14 @@
         {
             "section": "service-section",
             "section_title": {
-                "title": "Create and sell your NFTs"
+                "title": "Mint and sell your Content NFTs"
             },
             "items": [
                 {
                     "id": 1,
                     "title": "Set up your wallet",
-                    "path": "/connect",
-                    "subtitle": "Step-01",
-                    "description": "Powerful features and inclusions, which makes Nuron standout, easily customizable and scalable.",
+                    "subtitle": "Step 01",
+                    "description": "First of all you have to connect to a wallet to have access to the transactions.",
                     "images": [
                         {
                             "src": "/images/icons/shape-7.png"
@@ -49,22 +48,9 @@
                 },
                 {
                     "id": 2,
-                    "title": "Create your collection",
-                    "path": "/collection",
-                    "subtitle": "Step-02",
-                    "description": "A great collection of beautiful website templates for your need. Choose the best suitable template.",
-                    "images": [
-                        {
-                            "src": "/images/icons/shape-1.png"
-                        }
-                    ]
-                },
-                {
-                    "id": 3,
-                    "title": "Add your NFT's",
-                    "path": "/connect",
-                    "subtitle": "Step-03",
-                    "description": "We've made the template fully responsive, so it looks great on all devices: desktop, tablets and.",
+                    "title": "Create your content",
+                    "subtitle": "Step 02",
+                    "description": "Publish any educative content that you want to expose and monetize with crypto.",
                     "images": [
                         {
                             "src": "/images/icons/shape-5.png"
@@ -72,14 +58,24 @@
                     ]
                 },
                 {
-                    "id": 4,
-                    "title": "Sell Your NFT's",
-                    "path": "/creator",
-                    "subtitle": "Step-04",
-                    "description": "I throw myself down among the tall grass by the stream as I lie close to the earth NFT's.",
+                    "id": 3,
+                    "title": "Wait for the reviewing",
+                    "subtitle": "Step 03",
+                    "description": "Reviewers will be selected to make some verifications about your content.",
                     "images": [
                         {
-                            "src": "/images/icons/shape-6.png"
+                            "src": "/images/icons/shape-1.png"
+                        }
+                    ]
+                },
+                {
+                    "id": 4,
+                    "title": "Monetize your content",
+                    "subtitle": "Step 04",
+                    "description": "Finally you'll be able to receive token as much as buyers do the purchases of your content forever.",
+                    "images": [
+                        {
+                            "src": "/images/icons/shape-8.png"
                         }
                     ]
                 }
