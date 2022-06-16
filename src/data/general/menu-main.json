@@ -1,0 +1,68 @@
+[
+    {
+        "id": 1,
+        "text": "Home",
+        "path": "/"
+    },
+    {
+        "id": 1,
+        "text": "Lightpaper",
+        "path": "/"
+    },
+    {
+        "id": 2,
+        "text": "Publisher",
+        "path": "#!",
+        "submenu": [
+            {
+                "id": 21,
+                "text": "Publish your content",
+                "path": "/publisher/contents/create"
+            },
+            {
+                "id": 22,
+                "text": "List your contents",
+                "path": "/publisher/contents/list"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "text": "Reviewer",
+        "path": "#!",
+        "submenu": [
+            {
+                "id": 21,
+                "text": "Review a content",
+                "path": "/reviewer/contents/review"
+            },
+            {
+                "id": 22,
+                "text": "List your approvals",
+                "path": "/reviewer/contents/approvals"
+            },
+            {
+                "id": 22,
+                "text": "List your rejections",
+                "path": "/reviewer/contents/rejections"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "text": "Buyer",
+        "path": "#!",
+        "submenu": [
+            {
+                "id": 21,
+                "text": "Buy a content",
+                "path": "/buyer/contents/marketplace"
+            },
+            {
+                "id": 22,
+                "text": "List your purchased contents",
+                "path": "/buyer/contents/list"
+            }
+        ]
+    }
+]
