@@ -1,6 +1,6 @@
 import SEO from "@components/seo";
 import Wrapper from "@layout/wrapper";
-import Header from "@layout/header/header-01";
+import Header from "@layout/header/header-main";
 import Footer from "@layout/footer/footer-01";
 import HeroArea from "@containers/hero/layout-01";
 import LiveExploreArea from "@containers/live-explore/layout-01";
