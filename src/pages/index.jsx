@@ -1,7 +1,7 @@
 import SEO from "@components/seo";
 import Wrapper from "@layout/wrapper";
 import Header from "@layout/header/header-main";
-import Footer from "@layout/footer/footer-01";
+import Footer from "@layout/footer/footer-main";
 import HeroArea from "@containers/hero/layout-01";
 import ServiceArea from "@containers/services/layout-01";
 import { normalizedData } from "@utils/methods";

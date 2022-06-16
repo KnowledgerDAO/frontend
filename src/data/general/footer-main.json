@@ -1,0 +1,67 @@
+{
+    "id": "footer-data-01",
+    "logo-widget": {
+        "logo": [
+            {
+                "src": "/images/logo/logo-white.png",
+                "alt": "logo"
+            }
+        ],
+        "text": "Come in and start your journey, teaches and monetize."
+    },
+    "newsletter-widget": {
+        "title": "Get The Latest Nuron Updates",
+        "note": "Email is safe. We don't spam."
+    },
+    "information-widget": {
+        "title": "Information",
+        "menu": [
+            {
+                "id": 1,
+                "text": "Lightpaper",
+                "path": "/lightpaper"
+            },
+            {
+                "id": 2,
+                "text": "About Us",
+                "path": "/about"
+            }
+        ]
+    },
+    "soldout-widget": {
+        "title": "Recent Sold Out",
+        "products": [
+            {
+                "id": 1,
+                "title": "#21 The Wonder",
+                "path": "/product",
+                "highestBid": "Highest bid 1/20",
+                "price": "0.244wETH",
+                "image": {
+                    "src": "/images/portfolio/portfolio-01.jpg"
+                }
+            },
+            {
+                "id": 2,
+                "title": "Diamond Dog",
+                "path": "/product",
+                "highestBid": "Highest bid 1/20",
+                "price": "0.022wETH",
+                "image": {
+                    "src": "/images/portfolio/portfolio-02.jpg"
+                }
+            },
+            {
+                "id": 3,
+                "title": "Morgan11",
+                "path": "/product",
+                "highestBid": "Highest bid 1/20",
+                "price": "0.892wETH",
+                "image": {
+                    "src": "/images/portfolio/portfolio-03.jpg"
+                }
+            }
+        ]
+    },
+    "copyright_text": "©2022 Knowldger, Inc. All rights reserved"
+}
