@@ -322,18 +322,20 @@ const CreateNewContent = ({ className, space }) => {
                                                     id="network_percentage"
                                                     placeholder="% to bonuses the network"
                                                     type="number"
+                                                    disabled
                                                     {...register(
                                                         "network_percentage",
                                                         {
+                                                            value: 3.0,
                                                             min: {
-                                                                value: 0.5,
+                                                                value: 3,
                                                                 message:
-                                                                    "The minimum value is 0.5%",
+                                                                    "The minimum value is 3%",
                                                             },
                                                             max: {
-                                                                value: 2,
+                                                                value: 3,
                                                                 message:
-                                                                    "The minimum value is 2%",
+                                                                    "The minimum value is 3%",
                                                             },
                                                             required:
                                                                 "Network percentage is required",
