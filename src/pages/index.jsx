@@ -12,7 +12,7 @@ import CollectionArea from "@containers/collection/layout-01";
 import { normalizedData } from "@utils/methods";
 
 // Demo Data
-import homepageData from "../data/homepages/home-01.json";
+import homepageData from "../data/homepages/home-main.json";
 import productData from "../data/products.json";
 import sellerData from "../data/sellers.json";
 import collectionsData from "../data/collections.json";
