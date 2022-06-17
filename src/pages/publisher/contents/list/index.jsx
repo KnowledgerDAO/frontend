@@ -2,8 +2,11 @@
 import SEO from "@components/seo";
 import Wrapper from "@layout/wrapper";
 import Header from "@layout/header/header-main";
-import Footer from "@layout/footer/footer-01";
+import Footer from "@layout/footer/footer-main";
 import Breadcrumb from "@components/breadcrumb";
+import ContentArea from "@containers/content/list-content";
+
+import contentData from "../../../../data/contents.json";
 
 const ListContent = () => (
     <Wrapper>
@@ -11,6 +14,7 @@ const ListContent = () => (
         <Header />
         <main id="main-content">
             <Breadcrumb pageTitle="List contents" currentPage="List contents" />
+            <ContentArea data={{ products: contentData }} />
         </main>
         <Footer />
     </Wrapper>

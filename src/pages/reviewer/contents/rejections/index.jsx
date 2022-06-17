@@ -2,7 +2,7 @@
 import SEO from "@components/seo";
 import Wrapper from "@layout/wrapper";
 import Header from "@layout/header/header-main";
-import Footer from "@layout/footer/footer-01";
+import Footer from "@layout/footer/footer-main";
 import Breadcrumb from "@components/breadcrumb";
 
 const RejectContent = () => (
