@@ -17,7 +17,7 @@ const ProductDetails = ({ product, recentViewProducts, relatedProducts }) => (
         <Header />
         <main id="main-content">
             <Breadcrumb
-                pageTitle="Product Details"
+                pageTitle="Course Details"
                 currentPage="Product Details"
             />
             <ProductDetailsArea product={product} />

@@ -13,10 +13,10 @@ import { getAllPosts, getPostBySlug } from "../../lib/api";
 
 const BlogDetails = ({ post, categories, recentPosts, tags, relatedPosts }) => (
     <Wrapper>
-        <SEO pageTitle="Blog Details" />
+        <SEO pageTitle="Course Details" />
         <Header />
         <main id="main-content">
-            <Breadcrumb pageTitle="Blog Details" currentPage="Blog Details" />
+            <Breadcrumb pageTitle="Course Details" currentPage="Blog Details" />
             <div className="rn-blog-area rn-blog-details-default rn-section-gapTop">
                 <div className="container">
                     <div className="row g-6">
