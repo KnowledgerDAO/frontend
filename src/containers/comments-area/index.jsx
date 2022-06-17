@@ -5,7 +5,7 @@ const CommentsArea = () => (
         <div className="comments-area">
             <div className="trydo-blog-comment">
                 <h5 className="comment-title mb--40">
-                    9 replies on “Have You Heard? Agency Is Your Best Grow”
+                    Question & Answers
                 </h5>
                 <ul className="comment-list">
                     <li className="comment parent">

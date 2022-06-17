@@ -3,6 +3,7 @@ import clsx from "clsx";
 import Image from "next/image";
 import { getMonth } from "@utils/methods";
 import { ImageType } from "@utils/types";
+import ReactPlayer from "react-player";
 
 const BlogDetailsArea = ({ className, post }) => {
     const date = new Date(post.date);
@@ -18,21 +19,26 @@ const BlogDetailsArea = ({ className, post }) => {
             <div className="bd-thumbnail">
                 <div className="large-img mb--30">
                     {post.image?.src && (
-                        <Image
-                            className="w-100"
-                            src={post.image.src}
-                            alt="Blog Images"
+                        // <Image
+                        //     className="w-100"
+                        //     src={post.image.src}
+                        //     alt="Blog Images"
+                        //     width={919}
+                        //     height={517}
+                        //     layout="responsive"
+                        // />
+                        <ReactPlayer
+                            url="https://www.youtube.com/watch?v=ysz5S6PUM-U"
                             width={919}
                             height={517}
-                            layout="responsive"
                         />
                     )}
                 </div>
             </div>
-            <div
+            {/* <div
                 className="news-details"
                 dangerouslySetInnerHTML={{ __html: post.content }}
-            />
+            /> */}
         </div>
     );
 };

@@ -15,9 +15,7 @@ const BlogSidebar = ({
         {categories?.length > 0 && (
             <CategoryWidget categories={categories} rootPage={rootPage} />
         )}
-        {recentPosts?.length > 0 && (
-            <RecentPostsWidget recentPosts={recentPosts} rootPage={rootPage} />
-        )}
+
         {tags?.length > 0 && <TagWidget tags={tags} rootPage={rootPage} />}
     </aside>
 );
