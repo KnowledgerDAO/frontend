@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
 import Anchor from "@ui/anchor";
 import { containsObject } from "@utils/methods";
+import { BsPlay } from "react-icons/bs";
 
 const CategoryWidget = ({ categories, rootPage }) => {
     const cats = [];
@@ -23,16 +24,17 @@ const CategoryWidget = ({ categories, rootPage }) => {
     });
     return (
         <div className="rbt-single-widget widget_categories">
-            <h3 className="title">Categories</h3>
+            <h3 className="title">Course Content</h3>
             <div className="inner">
                 <ul className="category-list">
-                    {cats?.map((cat) => (
+                    {cats?.map((cat, i) => (
                         <li key={cat.slug}>
                             <Anchor path={`${rootPage}/category/${cat.slug}`}>
                                 <span className="left-content">
-                                    {cat.title}
+                                    <BsPlay /> {cat.title}
                                 </span>
-                                <span className="count-text">{cat.count}</span>
+
+                                <span className="count-text">Part {++i}</span>
                             </Anchor>
                         </li>
                     ))}

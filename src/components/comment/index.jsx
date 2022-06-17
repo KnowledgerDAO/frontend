@@ -25,14 +25,14 @@ const Comment = ({ image, username, time, text }) => (
         <div className="comment-text">
             <p>{text}</p>
         </div>
-        <div className="reply-edit">
+        {/* <div className="reply-edit">
             <div className="reply">
                 <a className="comment-reply-link" href="#!">
                     <i className="rbt feather-corner-down-right" />
                     Reply
                 </a>
             </div>
-        </div>
+        </div> */}
     </div>
 );
 
