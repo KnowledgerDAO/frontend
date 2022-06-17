@@ -30,17 +30,17 @@ const ProductDetailsArea = ({ space, className, product }) => (
                 <div className="col-lg-5 col-md-12 col-sm-12 mt_md--50 mt_sm--60">
                     <div className="rn-pd-content-area">
                         <ProductTitle
-                            title={product.title}
+                            title="Mastering Solidity"
                             likeCount={product.likeCount}
                         />
                         <span className="bid">
-                            Height bid{" "}
+                           Price:{" "}
                             <span className="price">
-                                {product.price.amount}
-                                {product.price.currency}
+                                56
+                                USDT
                             </span>
                         </span>
-                        <h6 className="title-name">#22 Portal , Info bellow</h6>
+                      
                         <div className="catagory-collection">
                             <ProductCategory owner={product.owner} />
                             <ProductCollection
@@ -48,7 +48,7 @@ const ProductDetailsArea = ({ space, className, product }) => (
                             />
                         </div>
                         <Button color="primary-alta" path="#">
-                            Unlockable content included
+                            Buy Course
                         </Button>
                         <div className="rn-bid-details">
                             <BidTab
@@ -58,10 +58,10 @@ const ProductDetailsArea = ({ space, className, product }) => (
                                 tags={product?.tags}
                                 history={product?.history}
                             />
-                            <PlaceBet
+                            {/* <PlaceBet
                                 highest_bid={product.highest_bid}
                                 auction_date={product?.auction_date}
-                            />
+                            /> */}
                         </div>
                     </div>
                 </div>

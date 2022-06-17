@@ -1,5 +1,5 @@
 ---
-title: NFTs can be offer marketing opportunities 
+title: Mastering Solidity Full course 
 date: "2021-05-06 11:50:00"
 category: Marketing
 image: {

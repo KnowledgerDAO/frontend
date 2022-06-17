@@ -2,29 +2,26 @@ import Image from "next/image";
 import PropTypes from "prop-types";
 import clsx from "clsx";
 import Anchor from "@ui/anchor";
-
+import { BsPlay } from "react-icons/bs";
+import { AiFillPlaySquare } from "react-icons/ai";
 const TopSeller = ({ name, time, path, image, eth, isVarified }) => (
     <div className="top-seller-inner-one">
         <div className="top-seller-wrapper">
             {image?.src && (
-                <div className={clsx("thumbnail", isVarified && "varified")}>
-                    <Anchor path={path}>
-                        <Image
-                            src={image.src}
-                            alt={image?.alt || "Nft_Profile"}
-                            width={image?.width || 50}
-                            height={image?.height || 50}
-                            layout="fixed"
-                        />
-                    </Anchor>
+                <div>
+                    <AiFillPlaySquare
+                        width={image?.width || 50}
+                        height={image?.height || 50}
+                    />
                 </div>
             )}
             <div className="top-seller-content">
                 <span>
-                    {eth && <>{eth} by</>}
+                    Part 1
+
                     <Anchor path={path}>{name}</Anchor>
                 </span>
-                {time && <span className="count-number">{time}</span>}
+                {time && <span className="count-number">5 min</span>}
             </div>
         </div>
     </div>

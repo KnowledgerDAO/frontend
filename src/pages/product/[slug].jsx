@@ -23,13 +23,13 @@ const ProductDetails = ({ product, recentViewProducts, relatedProducts }) => (
             <ProductDetailsArea product={product} />
             <ProductArea
                 data={{
-                    section_title: { title: "Recent View" },
+                    section_title: { title: "Courses from the same Owner" },
                     products: recentViewProducts,
                 }}
             />
             <ProductArea
                 data={{
-                    section_title: { title: "Related Item" },
+                    section_title: { title: "Similar Courses" },
                     products: relatedProducts,
                 }}
             />

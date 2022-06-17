@@ -14,13 +14,10 @@ const BidTab = ({ className, bids, owner, properties, tags, history }) => (
             <nav className="tab-button-one">
                 <Nav as="div" className="nav-tabs">
                     <Nav.Link as="button" eventKey="nav-home">
-                        Bids
+                        Course Content
                     </Nav.Link>
                     <Nav.Link as="button" eventKey="nav-profile">
                         Details
-                    </Nav.Link>
-                    <Nav.Link as="button" eventKey="nav-contact">
-                        History
                     </Nav.Link>
                 </Nav>
             </nav>
