@@ -6,21 +6,23 @@
             "headings": [
                 {
                     "id": 1,
+                    "path": "/",
                     "content": "Create your own NFT content, offer in Marketplace and earn with the purchases."
                 }
             ],
             "texts": [
                 {
                     "id": 1,
+                    "path": "/",
                     "content": "You can also sell the authority of your content and earn money becoming it in a lucrative investment."
                 }
             ],
             "buttons": [
                 {
                     "id": 2,
+                    "path": "/publisher/contents/create",
                     "color": "primary-alta",
-                    "content": "Create",
-                    "path": "/publisher/contents/create"
+                    "content": "Create"
                 }
             ],
             "images": [
@@ -37,10 +39,10 @@
             "section_title": {
                 "title": "Mint and sell your Content NFTs"
             },
-            "path": "/",
             "items": [
                 {
                     "id": 1,
+                    "path": "/",
                     "title": "Set up your wallet",
                     "subtitle": "Step 01",
                     "description": "First of all you have to connect to a wallet to have access to the transactions.",
@@ -52,6 +54,7 @@
                 },
                 {
                     "id": 2,
+                    "path": "/",
                     "title": "Create your content",
                     "subtitle": "Step 02",
                     "description": "Publish any educative content that you want to expose and monetize with crypto.",
@@ -63,6 +66,7 @@
                 },
                 {
                     "id": 3,
+                    "path": "/",
                     "title": "Wait for the reviewing",
                     "subtitle": "Step 03",
                     "description": "Reviewers will be selected to make some verifications about your content.",
@@ -74,6 +78,7 @@
                 },
                 {
                     "id": 4,
+                    "path": "/",
                     "title": "Monetize your content",
                     "subtitle": "Step 04",
                     "description": "Finally you'll be able to receive token as much as buyers do the purchases of your content forever.",
@@ -84,36 +89,6 @@
                     ]
                 }
             ]
-        },
-        {
-            "section": "live-explore-section",
-            "section_title": {
-                "title": "Live Bidding"
-            }
-        },
-        {
-            "section": "newest-section",
-            "section_title": {
-                "title": "Newest Items"
-            }
-        },
-        {
-            "section": "top-sller-section",
-            "section_title": {
-                "title": "Top Seller in"
-            }
-        },
-        {
-            "section": "explore-product-section",
-            "section_title": {
-                "title": "Explore Product"
-            }
-        },
-        {
-            "section": "collection-section",
-            "section_title": {
-                "title": "Top Collection"
-            }
         }
     ]
 }
