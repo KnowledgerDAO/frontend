@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import clsx from "clsx";
 import SectionTitle from "@components/section-title/layout-02";
 import Content from "@components/content";
-import ProductFilter from "@components/product-filter/layout-01";
+import ContentFilter from "@components/content-filter";
 import FilterButton from "@ui/filter-button";
 import { slideToggle } from "@utils/methods";
 import { SectionTitleType, ContentType } from "@utils/types";
@@ -41,16 +41,6 @@ const ExploreContentArea = ({ className, space, data }) => {
 
     const priceHandler = (value) => {
         dispatch({ type: "SET_INPUTS", payload: { price: value } });
-    };
-
-    const sortHandler = ({ value }) => {
-        const sortedProducts = state.products.sort((a, b) => {
-            if (value === "most-liked") {
-                return a.likeCount < b.likeCount ? 1 : -1;
-            }
-            return a.likeCount > b.likeCount ? 1 : -1;
-        });
-        dispatch({ type: "SET_PRODUCTS", payload: sortedProducts });
     };
 
     const filterMethods = (item, filterKey, value) => {
@@ -117,10 +107,9 @@ const ExploreContentArea = ({ className, space, data }) => {
                     </div>
                 </div>
 
-                <ProductFilter
+                <ContentFilter
                     ref={filterRef}
                     slectHandler={slectHandler}
-                    sortHandler={sortHandler}
                     priceHandler={priceHandler}
                     inputs={state.inputs}
                 />
