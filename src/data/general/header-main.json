@@ -2,10 +2,10 @@
     "id": "header-data-main",
     "logo": [
         {
-            "src": "/images/logo/logo-white.png"
+            "src": "/images/logo/logo-black-1.png"
         },
         {
-            "src": "/images/logo/logo-dark.png"
+            "src": "/images/logo/logo-white-1.png"
         }
     ],
     "activity_link": "about:blank"
