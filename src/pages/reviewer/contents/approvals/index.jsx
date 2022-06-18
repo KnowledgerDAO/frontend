@@ -4,6 +4,9 @@ import Wrapper from "@layout/wrapper";
 import Header from "@layout/header/header-main";
 import Footer from "@layout/footer/footer-main";
 import Breadcrumb from "@components/breadcrumb";
+import ContentArea from "@containers/content/list-table-content";
+
+import contentsData from "../../../../data/content-area.json";
 
 const ApproveContent = () => (
     <Wrapper>
@@ -13,6 +16,9 @@ const ApproveContent = () => (
             <Breadcrumb
                 pageTitle="List contents approved"
                 currentPage="List contents approved"
+            />
+            <ContentArea
+                data={{ contents: contentsData, isApprovalTable: true }}
             />
         </main>
         <Footer />
