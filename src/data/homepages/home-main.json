@@ -25,7 +25,10 @@
             ],
             "images": [
                 {
-                    "src": "/images/slider/slider-1.png"
+                    "src": "/images/logo/logo-black-big.png"
+                },
+                {
+                    "src": "/images/logo/logo-white-big.png"
                 }
             ]
         },

@@ -1585,3 +1585,9 @@
     --webkit-backdrop-filter: blur(12px);
     background-color: #ffffff0d;
 }
+
+.slider-thumbnail-custom-css {
+    .slider-thumbnail-dark {
+        display: none;
+    }
+}

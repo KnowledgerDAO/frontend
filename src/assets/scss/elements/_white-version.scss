@@ -1991,3 +1991,21 @@ html[data-theme="light"] body {
         }
     }
 }
+
+html[data-theme="light"] body {
+    .slider-thumbnail-custom-css .slider-thumbnail-light {
+        display: none;
+    }
+
+    .slider-thumbnail-custom-css .slider-thumbnail-dark {
+        display: block;
+    }
+
+    .slider-thumbnail-custom-css .slider-thumbnail-light {
+        display: none;
+    }
+
+    .slider-thumbnail-custom-css::after {
+        background: var(--color-border-white);
+    }
+}

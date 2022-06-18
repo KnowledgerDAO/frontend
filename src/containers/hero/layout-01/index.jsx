@@ -1,9 +1,11 @@
 import PropTypes from "prop-types";
 import Image from "next/image";
 import Button from "@ui/button";
+import Anchor from "@ui/anchor";
+import clsx from "clsx";
 import { HeadingType, TextType, ButtonType, ImageType } from "@utils/types";
 
-const HeroArea = ({ data }) => (
+const HeroArea = ({ className, data }) => (
     <div className="slider-one rn-section-gapTop">
         <div className="container">
             <div className="row row-reverce-sm align-items-center">
@@ -46,16 +48,33 @@ const HeroArea = ({ data }) => (
                     )}
                 </div>
                 <div className="col-lg-5 col-md-6 col-sm-12 offset-lg-1">
-                    {data?.images?.[0]?.src && (
-                        <div className="slider-thumbnail">
-                            <Image
-                                src={data.images[0].src}
-                                alt={data.images[0]?.alt || "Slider Images"}
-                                width={585}
-                                height={593}
-                            />
-                        </div>
-                    )}
+                    <div
+                        className={clsx(
+                            "slider-thumbnail slider-thumbnail-custom-css",
+                            className
+                        )}
+                    >
+                        {data?.images?.[0]?.src && (
+                            <Anchor className="slider-thumbnail-light" path="/">
+                                <Image
+                                    src={data.images[0].src}
+                                    alt={data.images[0]?.alt || "Slider Images"}
+                                    width={585}
+                                    height={593}
+                                />
+                            </Anchor>
+                        )}
+                        {data?.images?.[1]?.src && (
+                            <Anchor className="slider-thumbnail-dark" path="/">
+                                <Image
+                                    src={data.images[1].src}
+                                    alt={data.images[1]?.alt || "Slider Images"}
+                                    width={585}
+                                    height={593}
+                                />
+                            </Anchor>
+                        )}
+                    </div>
                 </div>
             </div>
         </div>
@@ -63,6 +82,7 @@ const HeroArea = ({ data }) => (
 );
 
 HeroArea.propTypes = {
+    className: PropTypes.string,
     data: PropTypes.shape({
         headings: PropTypes.arrayOf(HeadingType),
         texts: PropTypes.arrayOf(TextType),
