@@ -11,7 +11,7 @@
         "categories": ["video"],
         "images": [
             {
-                "src": "/images/portfolio/lg/portfolio-01.jpg"
+                "src": "/images/content/dao-1.png"
             },
             {
                 "src": "/images/portfolio/lg/portfolio-02.jpg"
@@ -43,7 +43,7 @@
         "categories": ["file"],
         "images": [
             {
-                "src": "/images/portfolio/lg/portfolio-01.jpg"
+                "src": "/images/content/blockchain-mistery-1.jpg"
             },
             {
                 "src": "/images/portfolio/lg/portfolio-02.jpg"
@@ -65,7 +65,7 @@
     },
     {
         "id": 3,
-        "title": "Token Standards - Learn in practice ERC20, ERC721, ERC777, ERC1155",
+        "title": "Token Standards - Learn in practice ERC20, ERC721, ERC1155",
         "slug": "token-standards",
         "published_at": "20-JUN-2021 08:03:00",
         "price": {
@@ -75,7 +75,7 @@
         "categories": ["video"],
         "images": [
             {
-                "src": "/images/portfolio/lg/portfolio-01.jpg"
+                "src": "/images/content/ERC20-vs-ERC721-vs-ERC1155-1.png"
             },
             {
                 "src": "/images/portfolio/lg/portfolio-02.jpg"
@@ -107,7 +107,7 @@
         "categories": ["file"],
         "images": [
             {
-                "src": "/images/portfolio/lg/portfolio-01.jpg"
+                "src": "/images/content/crypto-market-01.jpg"
             },
             {
                 "src": "/images/portfolio/lg/portfolio-02.jpg"
@@ -139,7 +139,7 @@
         "categories": ["video", "file"],
         "images": [
             {
-                "src": "/images/portfolio/lg/portfolio-01.jpg"
+                "src": "/images/content/blockchain-engineer-01.jpeg"
             },
             {
                 "src": "/images/portfolio/lg/portfolio-02.jpg"
