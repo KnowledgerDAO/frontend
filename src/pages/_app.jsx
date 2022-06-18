@@ -10,8 +10,8 @@ import "../assets/css/modal-video.css";
 import "react-toastify/dist/ReactToastify.css";
 import "../assets/scss/style.scss";
 
-const moralisAppId = "Zgi9h3xvYrvXHJZmYjgzbfxlTPnDq6H3RytmW0qt";
-const moralisServerURL = "https://mrnuat16od8z.usemoralis.com:2053/server";
+const moralisAppId = "y3JZjaaOZUbh1271kfNAL46pkl2pzzuSqnpy7P4D";
+const moralisServerURL = "https://yjshhitafgnh.usemoralis.com:2053/server";
 
 const MyApp = ({ Component, pageProps }) => {
     const router = useRouter();
