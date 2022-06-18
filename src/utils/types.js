@@ -78,6 +78,28 @@ export const ProductType = PropTypes.shape({
     bitCount: PropTypes.number,
 });
 
+export const ContentType = PropTypes.shape({
+    id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
+    title: PropTypes.string.isRequired,
+    slug: PropTypes.string.isRequired,
+    published_at: PropTypes.string,
+    price: PropTypes.shape({
+        amount: PropTypes.number.isRequired,
+        currency: PropTypes.string.isRequired,
+    }).isRequired,
+    categories: PropTypes.arrayOf(PropTypes.string),
+    images: PropTypes.arrayOf(ImageType),
+    authors: PropTypes.arrayOf(
+        PropTypes.shape({
+            id: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
+                .isRequired,
+            name: PropTypes.string.isRequired,
+            slug: PropTypes.string.isRequired,
+            image: ImageType,
+        })
+    ),
+});
+
 export const SellerType = PropTypes.shape({
     id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
     name: PropTypes.string.isRequired,

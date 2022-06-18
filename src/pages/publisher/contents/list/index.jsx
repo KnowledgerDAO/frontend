@@ -24,6 +24,4 @@ export async function getStaticProps() {
     return { props: { className: "template-color-1" } };
 }
 
-// ListContent.propTypes = {};
-
 export default ListContent;

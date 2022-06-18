@@ -5,61 +5,61 @@
         "path": "/"
     },
     {
-        "id": 1,
+        "id": 2,
         "text": "Lightpaper",
         "path": "/"
     },
     {
-        "id": 2,
+        "id": 3,
         "text": "Publisher",
         "path": "#!",
         "submenu": [
             {
-                "id": 21,
+                "id": 31,
                 "text": "Publish your content",
                 "path": "/publisher/contents/create"
             },
             {
-                "id": 22,
+                "id": 32,
                 "text": "List your contents",
                 "path": "/publisher/contents/list"
             }
         ]
     },
     {
-        "id": 3,
+        "id": 4,
         "text": "Reviewer",
         "path": "#!",
         "submenu": [
             {
-                "id": 21,
+                "id": 41,
                 "text": "Review a content",
                 "path": "/reviewer/contents/review"
             },
             {
-                "id": 22,
+                "id": 42,
                 "text": "List your approvals",
                 "path": "/reviewer/contents/approvals"
             },
             {
-                "id": 22,
+                "id": 43,
                 "text": "List your rejections",
                 "path": "/reviewer/contents/rejections"
             }
         ]
     },
     {
-        "id": 3,
+        "id": 5,
         "text": "Buyer",
         "path": "#!",
         "submenu": [
             {
-                "id": 21,
+                "id": 51,
                 "text": "Buy a content",
                 "path": "/buyer/contents/marketplace"
             },
             {
-                "id": 22,
+                "id": 52,
                 "text": "List your purchased contents",
                 "path": "/buyer/contents/list"
             }

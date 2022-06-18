@@ -6,7 +6,7 @@ import Content from "@components/content";
 import ProductFilter from "@components/product-filter/layout-01";
 import FilterButton from "@ui/filter-button";
 import { slideToggle } from "@utils/methods";
-import { SectionTitleType, ProductType } from "@utils/types";
+import { SectionTitleType, ContentType } from "@utils/types";
 
 function reducer(state, action) {
     switch (action.type) {
@@ -137,13 +137,10 @@ const ExploreContentArea = ({ className, space, data }) => {
                                         placeBid={!!data.placeBid}
                                         title={prod.title}
                                         slug={prod.slug}
-                                        latestBid={prod.latestBid}
                                         price={prod.price}
-                                        likeCount={prod.likeCount}
                                         auction_date={prod.auction_date}
                                         image={prod.images?.[0]}
                                         authors={prod.authors}
-                                        bitCount={prod.bitCount}
                                     />
                                 </div>
                             ))}
@@ -162,7 +159,7 @@ ExploreContentArea.propTypes = {
     space: PropTypes.oneOf([1, 2]),
     data: PropTypes.shape({
         section_title: SectionTitleType,
-        products: PropTypes.arrayOf(ProductType),
+        products: PropTypes.arrayOf(ContentType),
         placeBid: PropTypes.bool,
     }),
 };
