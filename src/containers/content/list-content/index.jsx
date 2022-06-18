@@ -61,8 +61,8 @@ const ExploreContentArea = ({ className, space, data }) => {
         }
         if (filterKey === "price") {
             return (
-                item[itemKey].amount <= value[0] / 100 ||
-                item[itemKey].amount >= value[1] / 100
+                item[itemKey].amount <= value[0] ||
+                item[itemKey].amount >= value[1]
             );
         }
         if (Array.isArray(item[itemKey])) {
