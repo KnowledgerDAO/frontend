@@ -5,7 +5,11 @@ const ContentTable = ({ className, title, isApprovalTable, contents }) => (
     <div className={clsx("row", className)}>
         <div className="col-12">
             <div className="table-title-area d-flex">
-                <i className="feather-calendar" />
+                <i
+                    className={
+                        isApprovalTable ? "feather-check" : "feather-lock"
+                    }
+                />
                 <h3>{title}</h3>
             </div>
 

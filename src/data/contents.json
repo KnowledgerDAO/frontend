@@ -4,6 +4,7 @@
         "title": "Understanding DAOs",
         "slug": "dao-concepts",
         "published_at": "20-JUN-2021 08:03:00",
+        "approved": true,
         "price": {
             "amount": 23.5,
             "currency": "DAO"
@@ -36,6 +37,8 @@
         "title": "The mistery of blockchain",
         "slug": "blockchain-mistery",
         "published_at": "20-JUN-2021 08:03:00",
+        "approved": false,
+        "rejectedReason": "Corrupted file",
         "price": {
             "amount": 0.1,
             "currency": "ETH"
@@ -68,6 +71,8 @@
         "title": "Token Standards - Learn in practice ERC20, ERC721, ERC1155",
         "slug": "token-standards",
         "published_at": "20-JUN-2021 08:03:00",
+        "approved": false,
+        "rejectedReason": "Contains unrelated scene",
         "price": {
             "amount": 15,
             "currency": "UNI"
@@ -100,6 +105,7 @@
         "title": "Demystify crypto market",
         "slug": "crypto-market",
         "published_at": "20-JUN-2021 08:03:00",
+        "approved": true,
         "price": {
             "amount": 20,
             "currency": "USDT"
@@ -132,6 +138,7 @@
         "title": "How to become a Blockchain Software Engineer?",
         "slug": "blockchain-engineer",
         "published_at": "20-JUN-2021 08:03:00",
+        "approved": true,
         "price": {
             "amount": 39.99,
             "currency": "USDC"

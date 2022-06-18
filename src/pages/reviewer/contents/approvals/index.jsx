@@ -6,7 +6,7 @@ import Footer from "@layout/footer/footer-main";
 import Breadcrumb from "@components/breadcrumb";
 import ContentArea from "@containers/content/list-table-content";
 
-import contentsData from "../../../../data/content-area.json";
+import contentsData from "../../../../data/contents.json";
 
 const ApproveContent = () => (
     <Wrapper>
