@@ -4,15 +4,25 @@ import Wrapper from "@layout/wrapper";
 import Header from "@layout/header/header-main";
 import Footer from "@layout/footer/footer-main";
 import Breadcrumb from "@components/breadcrumb";
+import ContentArea from "@containers/content/list-content";
+
+import contentData from "../../../../data/contents.json";
 
 const ListPurchasedContents = () => (
     <Wrapper>
-        <SEO pageTitle="List your purchases" />
+        <SEO pageTitle="List your purchased contents" />
         <Header />
         <main id="main-content">
             <Breadcrumb
-                pageTitle="List purchases"
-                currentPage="List purchases"
+                pageTitle="List purchased contents"
+                currentPage="List purchased contents"
+            />
+            <ContentArea
+                data={{
+                    products: contentData.filter(
+                        (content) => !!content.approved
+                    ),
+                }}
             />
         </main>
         <Footer />

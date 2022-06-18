@@ -14,7 +14,10 @@ const ListContent = () => (
         <Header />
         <main id="main-content">
             <Breadcrumb pageTitle="List contents" currentPage="List contents" />
-            <ContentArea data={{ products: contentData }} />
+            <ContentArea data={{ 
+                products: contentData.filter((content) => 
+                    content.authors.find(author => author.name === 'Mark Jordan')) 
+            }} />
         </main>
         <Footer />
     </Wrapper>
