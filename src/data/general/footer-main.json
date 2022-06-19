@@ -23,12 +23,7 @@
             {
                 "id": 1,
                 "text": "Lightpaper",
-                "path": "/lightpaper"
-            },
-            {
-                "id": 2,
-                "text": "About Us",
-                "path": "/about"
+                "path": "/documents/pdf/litepaper.pdf"
             }
         ]
     },
