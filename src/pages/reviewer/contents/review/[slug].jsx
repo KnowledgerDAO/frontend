@@ -9,13 +9,13 @@ import CommentsArea from "@containers/comments-area";
 import CommentForm from "@components/comment-form";
 import RelatedPostsArea from "@containers/related-posts";
 import BlogSidebar from "@containers/blog-sidebar";
-import { getAllPosts, getPostBySlug } from "../../../../lib/api";
 import PlaceBet from "@components/product-details/place-bet";
 import ReviewSidebar from "@containers/review-sidebar";
 import Button from "@ui/button";
 import AllowReviewModal from "@components/modals/review-modal/allow";
 import DenyReviewModal from "@components/modals/review-modal/deny";
 import { useState } from "react";
+import { getAllPosts, getPostBySlug } from "../../../../lib/api";
 
 const ReviewContent = ({
     post,
@@ -59,13 +59,12 @@ const ReviewContent = ({
                                 />
                                 <div className="flex">
                                     <Button
-                                        color={"primary-alta"}
+                                        color="primary-alta"
                                         className="mt--30"
                                         onClick={handleBidModal}
                                     >
                                         Review
                                     </Button>
-                                   
                                 </div>
                             </div>
                         </div>

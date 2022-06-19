@@ -4,6 +4,7 @@ import clsx from "clsx";
 import Anchor from "@ui/anchor";
 import { BsPlay } from "react-icons/bs";
 import { AiFillPlaySquare } from "react-icons/ai";
+
 const TopSeller = ({ name, time, path, image, eth, isVarified }) => (
     <div className="top-seller-inner-one">
         <div className="top-seller-wrapper">
@@ -17,9 +18,7 @@ const TopSeller = ({ name, time, path, image, eth, isVarified }) => (
             )}
             <div className="top-seller-content">
                 <span>
-                    Part 1
-
-                    <Anchor path={path}>{name}</Anchor>
+                    Part 1<Anchor path={path}>{name}</Anchor>
                 </span>
                 {time && <span className="count-number">5 min</span>}
             </div>

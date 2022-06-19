@@ -34,7 +34,7 @@ const CategoryWidget = ({ categories, rootPage }) => {
                                     <BsPlay /> {cat.title}
                                 </span>
 
-                                <span className="count-text">Part {++i}</span>
+                                <span className="count-text">Part {i}</span>
                             </Anchor>
                         </li>
                     ))}

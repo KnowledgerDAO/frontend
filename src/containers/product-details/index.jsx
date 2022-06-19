@@ -34,13 +34,9 @@ const ProductDetailsArea = ({ space, className, product }) => (
                             likeCount={product.likeCount}
                         />
                         <span className="bid">
-                           Price:{" "}
-                            <span className="price">
-                                56
-                                USDT
-                            </span>
+                            Price: <span className="price">56 USDT</span>
                         </span>
-                      
+
                         <div className="catagory-collection">
                             <ProductCategory owner={product.owner} />
                             <ProductCollection
