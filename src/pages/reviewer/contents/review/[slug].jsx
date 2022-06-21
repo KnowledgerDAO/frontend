@@ -130,7 +130,7 @@ export async function getStaticProps({ params }) {
 
 ReviewContent.propTypes = {
     post: PropTypes.shape({
-        content: PropTypes.string(),
+        content: PropTypes.string,
         tags: PropTypes.arrayOf(PropTypes.shape({})),
     }),
     categories: PropTypes.arrayOf(PropTypes.shape({})),

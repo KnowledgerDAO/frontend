@@ -34,7 +34,7 @@ BidsTabContent.propTypes = {
             bidAt: PropTypes.string.isRequired,
         })
     ),
-    product: PropTypes.arrayOf(PropTypes.object()),
+    product: PropTypes.arrayOf(PropTypes.shape({})),
 };
 
 export default BidsTabContent;

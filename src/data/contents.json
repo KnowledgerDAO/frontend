@@ -128,7 +128,7 @@
             "currency": "UNI"
         },
         "categories": ["video"],
-        "tags": [["Blockchain", "Ethereum", "SmartContracts"]],
+        "tags": [[{ "title": "Blockchain", "slug": "blockchain" }, { "title": "Ethereum", "slug": "ethereum" }, { "title": "SmartContracts", "slug": "smartcontracts" }]],
         "owner": {
             "name": "Brodband",
             "slug": "/author",
