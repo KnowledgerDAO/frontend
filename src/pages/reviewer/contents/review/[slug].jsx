@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import SEO from "@components/seo";
 import Wrapper from "@layout/wrapper";
-import Header from "@layout/header/header-01";
+import Header from "@layout/header/header-main";
 import Footer from "@layout/footer/footer-01";
 import Breadcrumb from "@components/breadcrumb";
 import BlogDetailsArea from "@containers/blog-details";
@@ -16,6 +16,7 @@ import Button from "@ui/button";
 import AllowReviewModal from "@components/modals/review-modal/allow";
 import DenyReviewModal from "@components/modals/review-modal/deny";
 import { useState } from "react";
+import Link from "next/link";
 
 const ReviewContent = ({
     post,
@@ -60,12 +61,19 @@ const ReviewContent = ({
                                 <div className="flex">
                                     <Button
                                         color={"primary-alta"}
-                                        className="mt--30"
+                                        className="mt--30 mr--10"
                                         onClick={handleBidModal}
                                     >
-                                        Review
+                                        Allow
                                     </Button>
-                                   
+                                    <Link href="/reviewer/contents/review/feedback">
+                                        <Button
+                                            color={"primary-alta"}
+                                            className="mt--30"
+                                        >
+                                            Deny
+                                        </Button>
+                                    </Link>
                                 </div>
                             </div>
                         </div>

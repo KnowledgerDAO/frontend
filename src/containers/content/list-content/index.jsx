@@ -8,6 +8,7 @@ import FilterButton from "@ui/filter-button";
 import { slideToggle } from "@utils/methods";
 import { SectionTitleType, ContentType } from "@utils/types";
 
+
 function reducer(state, action) {
     switch (action.type) {
         case "FILTER_TOGGLE":

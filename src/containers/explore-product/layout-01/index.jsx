@@ -7,6 +7,7 @@ import ProductFilter from "@components/product-filter/layout-01";
 import FilterButton from "@ui/filter-button";
 import { slideToggle } from "@utils/methods";
 import { SectionTitleType, ProductType } from "@utils/types";
+import Link from "next/link";
 
 function reducer(state, action) {
     switch (action.type) {

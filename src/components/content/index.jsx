@@ -34,7 +34,7 @@ const Content = ({
             >
                 <div className="card-thumbnail">
                     {image?.src && (
-                        <Anchor path={`/product/${slug}`}>
+                        <Anchor path={`/buyer/contents/video/${slug}`}>
                             <Image
                                 src={image.src}
                                 alt={image?.alt || "NFT_portfolio"}
@@ -55,7 +55,7 @@ const Content = ({
                         <div key={author.id}>{author.name}</div>
                     ))}
                 </div>
-                <Anchor path={`/product/${slug}`}>
+                <Anchor path={`/buyer/contents/video/${slug}`}>
                     <span className="product-name">{title}</span>
                 </Anchor>
                 <ContentInfo price={price} />

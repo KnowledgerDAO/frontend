@@ -9,7 +9,17 @@
             "amount": 23.5,
             "currency": "DAO"
         },
+        "date": "06-20-2022",
         "categories": ["video"],
+        "content": [
+            "Lesson 1 - What is DAO",
+            "Lesson 2 - How it Works",
+            "Lesson 3 - Getting your hands dirty",
+            "Lesson 4 - Practical use cases"
+        ],
+        "video_url": "https://www.youtube.com/watch?v=KHm0uUPqmVE",
+        "tags": [[{ "title": "nftcollector", "slug": "nftcollector" }]],
+
         "images": [
             {
                 "src": "/images/content/dao-1.png"
@@ -39,11 +49,19 @@
         "published_at": "20-JUN-2021 08:03:00",
         "approved": false,
         "rejectedReason": "Corrupted file",
+        "date": "06-20-2022",
         "price": {
             "amount": 0.1,
             "currency": "ETH"
         },
         "categories": ["file"],
+        "tags": [[{ "title": "nftcollector", "slug": "nftcollector" }]],
+        "content": [
+            "Lesson 1 - What is DAO",
+            "Lesson 2 - How it Works",
+            "Lesson 3 - Getting your hands dirty",
+            "Lesson 4 - Practical use cases"
+        ],
         "images": [
             {
                 "src": "/images/content/blockchain-mistery-1.jpg"
@@ -55,6 +73,7 @@
                 "src": "/images/portfolio/lg/portfolio-03.jpg"
             }
         ],
+        "video_url": "https://www.youtube.com/watch?v=5LPl9UDq23Q",
         "authors": [
             {
                 "id": 1,
@@ -73,11 +92,20 @@
         "published_at": "20-JUN-2021 08:03:00",
         "approved": false,
         "rejectedReason": "Contains unrelated scene",
+        "date": "06-20-2022",
         "price": {
             "amount": 15,
             "currency": "UNI"
         },
         "categories": ["video"],
+        "tags": [["Blockchain", "Ethereum", "SmartContracts"]],
+        "content": [
+            "Lesson 1 - What is DAO",
+            "Lesson 2 - How it Works",
+            "Lesson 3 - Getting your hands dirty",
+            "Lesson 4 - Practical use cases"
+        ],
+        "video_url": "https://www.youtube.com/watch?v=m1SpL25Ydf4",
         "images": [
             {
                 "src": "/images/content/ERC20-vs-ERC721-vs-ERC1155-1.png"
@@ -105,12 +133,21 @@
         "title": "Demystify crypto market",
         "slug": "crypto-market",
         "published_at": "20-JUN-2021 08:03:00",
+        "date": "06-20-2022",
         "approved": true,
         "price": {
             "amount": 20,
             "currency": "USDT"
         },
         "categories": ["file"],
+        "tags": [[{ "title": "nftcollector", "slug": "nftcollector" }]],
+        "content": [
+            "Lesson 1 - What is DAO",
+            "Lesson 2 - How it Works",
+            "Lesson 3 - Getting your hands dirty",
+            "Lesson 4 - Practical use cases"
+        ],
+        "video_url": "https://www.youtube.com/watch?v=e4rXI6UCZao",
         "images": [
             {
                 "src": "/images/content/crypto-market-01.jpg"
@@ -138,12 +175,21 @@
         "title": "How to become a Blockchain Software Engineer?",
         "slug": "blockchain-engineer",
         "published_at": "20-JUN-2021 08:03:00",
+        "date": "06-20-2022",
         "approved": true,
         "price": {
             "amount": 39.99,
             "currency": "USDC"
         },
         "categories": ["video", "file"],
+        "tags": [[{ "title": "nftcollector", "slug": "nftcollector" }]],
+        "content": [
+            "Lesson 1 - What is DAO",
+            "Lesson 2 - How it Works",
+            "Lesson 3 - Getting your hands dirty",
+            "Lesson 4 - Practical use cases"
+        ],
+        "video_url": "https://www.youtube.com/watch?v=VA-46Goc0e4",
         "images": [
             {
                 "src": "/images/content/blockchain-engineer-01.jpeg"

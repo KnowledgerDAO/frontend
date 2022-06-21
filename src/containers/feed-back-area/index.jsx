@@ -29,7 +29,7 @@ const FeedbackArea = () => (
                             <nav className="left-nav rbt-sticky-top-adjust-five">
                                 <Nav className="nav nav-tabs">
                                     <Nav.Link
-                                        eventKey="nav-contact"
+                                        eventKey="nav-home"
                                         as="button"
                                     >
                                         <i className="feather-bell" />
@@ -46,16 +46,14 @@ const FeedbackArea = () => (
                     </div>
                     <div className="col-lg-9 col-md-9 col-sm-12 mt_sm--30">
                         <TabContent className="tab-content-edit-wrapepr">
-                            <TabPane eventKey="nav-home">
-                                <EditProfileImage />
-                            </TabPane>
+                         
                             <TabPane eventKey="nav-homes">
                                 <ThoughtsArea />
                             </TabPane>
                             <TabPane eventKey="nav-profile">
                                 <ChangePassword />
                             </TabPane>
-                            <TabPane eventKey="nav-contact">
+                            <TabPane eventKey="nav-home">
                                 <ReasonsArea />
                             </TabPane>
                         </TabContent>

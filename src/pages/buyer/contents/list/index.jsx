@@ -5,8 +5,8 @@ import Header from "@layout/header/header-main";
 import Footer from "@layout/footer/footer-main";
 import Breadcrumb from "@components/breadcrumb";
 import ContentArea from "@containers/content/list-content";
-
 import contentData from "../../../../data/contents.json";
+
 
 const ListPurchasedContents = () => (
     <Wrapper>

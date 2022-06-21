@@ -10,15 +10,19 @@ const BlogSidebar = ({
     recentPosts,
     tags,
     rootPage,
-}) => (
-    <aside className={clsx("rwt-sidebar", className)}>
-        {categories?.length > 0 && (
-            <CategoryWidget categories={categories} rootPage={rootPage} />
-        )}
+}) => {
 
-        {tags?.length > 0 && <TagWidget tags={tags} rootPage={rootPage} />}
-    </aside>
-);
+    console.log({tags})
+    return (
+        <aside className={clsx("rwt-sidebar", className)}>
+            {categories?.length > 0 && (
+                <CategoryWidget categories={categories} rootPage={rootPage} />
+            )}
+
+            {tags?.length > 0 && <TagWidget tags={tags} rootPage={rootPage} />}
+        </aside>
+    );
+};
 
 BlogSidebar.propTypes = {
     className: PropTypes.string,

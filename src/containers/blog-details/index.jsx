@@ -18,17 +18,9 @@ const BlogDetailsArea = ({ className, post }) => {
             </div>
             <div className="bd-thumbnail">
                 <div className="large-img mb--30">
-                    {post.image?.src && (
-                        // <Image
-                        //     className="w-100"
-                        //     src={post.image.src}
-                        //     alt="Blog Images"
-                        //     width={919}
-                        //     height={517}
-                        //     layout="responsive"
-                        // />
+                    {post.images && (
                         <ReactPlayer
-                            url="https://www.youtube.com/watch?v=ysz5S6PUM-U"
+                            url={post.video_url}
                             width={919}
                             height={517}
                         />
