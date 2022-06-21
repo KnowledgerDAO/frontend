@@ -20,7 +20,9 @@ const DenyReviewModal = ({ show, handleModal }) => (
             </button>
         )}
         <Modal.Header>
-            <h3 className="modal-title">Why are you disapproving this course?</h3>
+            <h3 className="modal-title">
+                Why are you disapproving this course?
+            </h3>
         </Modal.Header>
         <Modal.Body>
             <div className="placebid-form-box">

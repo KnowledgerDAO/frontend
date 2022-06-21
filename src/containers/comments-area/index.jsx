@@ -4,9 +4,7 @@ const CommentsArea = () => (
     <div className="comments-wrapper pt--40">
         <div className="comments-area">
             <div className="trydo-blog-comment">
-                <h5 className="comment-title mb--40">
-                    Question & Answers
-                </h5>
+                <h5 className="comment-title mb--40">Question & Answers</h5>
                 <ul className="comment-list">
                     <li className="comment parent">
                         <Comment

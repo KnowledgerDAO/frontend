@@ -9,7 +9,6 @@ import CommentsArea from "@containers/comments-area";
 import CommentForm from "@components/comment-form";
 import RelatedPostsArea from "@containers/related-posts";
 import BlogSidebar from "@containers/blog-sidebar";
-import { getAllPosts, getPostBySlug } from "../../../../lib/api";
 import PlaceBet from "@components/product-details/place-bet";
 import ReviewSidebar from "@containers/review-sidebar";
 import Button from "@ui/button";
