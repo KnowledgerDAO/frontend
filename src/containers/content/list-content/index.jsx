@@ -152,6 +152,7 @@ ExploreContentArea.propTypes = {
         products: PropTypes.arrayOf(ContentType),
         placeBid: PropTypes.bool,
     }),
+    path: PropTypes.string(),
 };
 
 ExploreContentArea.defaultProps = {

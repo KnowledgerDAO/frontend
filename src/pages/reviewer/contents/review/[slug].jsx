@@ -16,7 +16,7 @@ import AllowReviewModal from "@components/modals/review-modal/allow";
 import DenyReviewModal from "@components/modals/review-modal/deny";
 import { useState } from "react";
 import Link from "next/link";
-import { getAllPosts, getPostBySlug } from "../../../../lib/api";
+import contentData from "../../../../data/contents.json";
 
 const ReviewContent = ({
     post,
@@ -34,8 +34,6 @@ const ReviewContent = ({
     const handleDenyModal = () => {
         setShowDenyModal((prev) => !prev);
     };
-
-    console.log(post);
     return (
         <Wrapper>
             <SEO pageTitle="Review pending contents" />
@@ -131,7 +129,10 @@ export async function getStaticProps({ params }) {
 }
 
 ReviewContent.propTypes = {
-    post: PropTypes.shape({}),
+    post: PropTypes.shape({
+        content: PropTypes.string(),
+        tags: PropTypes.arrayOf(PropTypes.shape({})),
+    }),
     categories: PropTypes.arrayOf(PropTypes.shape({})),
     recentPosts: PropTypes.arrayOf(PropTypes.shape({})),
     tags: PropTypes.arrayOf(PropTypes.arrayOf(PropTypes.shape({}))),

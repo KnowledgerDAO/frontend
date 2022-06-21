@@ -6,7 +6,7 @@ const BidsTabContent = ({ bids, product }) => (
     <div>
         {product?.map((bid, key) => (
             <TopSeller
-                key={key}
+                key={bid.id}
                 name={bid}
                 eth={432}
                 path="fsdf"
@@ -34,6 +34,7 @@ BidsTabContent.propTypes = {
             bidAt: PropTypes.string.isRequired,
         })
     ),
+    product: PropTypes.arrayOf(PropTypes.object()),
 };
 
 export default BidsTabContent;

@@ -40,6 +40,7 @@ BlogDetailsArea.propTypes = {
         date: PropTypes.string,
         image: ImageType,
         content: PropTypes.string,
+        video_url: PropTypes.string,
     }),
 };
 

@@ -12,9 +12,7 @@ const ReviewSidebar = ({
     tags,
     rootPage,
 }) => {
-    const cat = categories.map((cat) => {
-        return { title: cat, slug: cat };
-    });
+    const cat = categories.map((c) => ({ title: c, slug: c }));
     return (
         <aside className={clsx("rwt-sidebar", className)}>
             {categories?.length > 0 && (

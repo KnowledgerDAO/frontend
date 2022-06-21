@@ -11,8 +11,7 @@ const BlogSidebar = ({
     tags,
     rootPage,
 }) => {
-
-    console.log({tags})
+    console.log({ tags });
     return (
         <aside className={clsx("rwt-sidebar", className)}>
             {categories?.length > 0 && (

@@ -28,10 +28,7 @@ const FeedbackArea = () => (
                         <Sticky>
                             <nav className="left-nav rbt-sticky-top-adjust-five">
                                 <Nav className="nav nav-tabs">
-                                    <Nav.Link
-                                        eventKey="nav-home"
-                                        as="button"
-                                    >
+                                    <Nav.Link eventKey="nav-home" as="button">
                                         <i className="feather-bell" />
                                         Reason
                                     </Nav.Link>
@@ -46,7 +43,6 @@ const FeedbackArea = () => (
                     </div>
                     <div className="col-lg-9 col-md-9 col-sm-12 mt_sm--30">
                         <TabContent className="tab-content-edit-wrapepr">
-                         
                             <TabPane eventKey="nav-homes">
                                 <ThoughtsArea />
                             </TabPane>

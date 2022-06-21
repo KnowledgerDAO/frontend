@@ -55,6 +55,7 @@ BidTab.propTypes = {
     properties: PropTypes.arrayOf(PropTypes.shape({})),
     tags: PropTypes.arrayOf(PropTypes.shape({})),
     history: PropTypes.arrayOf(PropTypes.shape({})),
+    content: PropTypes.arrayOf(PropTypes.shape({})),
 };
 
 export default BidTab;
