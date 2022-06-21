@@ -10,6 +10,8 @@ import { shuffleArray } from "@utils/methods";
 
 // demo data
 import productData from "../../data/products.json";
+import contentData from "../../data/contents.json";
+
 
 const ProductDetails = ({ product, recentViewProducts, relatedProducts }) => (
     <Wrapper>
@@ -40,7 +42,7 @@ const ProductDetails = ({ product, recentViewProducts, relatedProducts }) => (
 
 export async function getStaticPaths() {
     return {
-        paths: productData.map(({ slug }) => ({
+        paths: contentData.map(({ slug }) => ({
             params: {
                 slug,
             },
@@ -50,7 +52,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-    const product = productData.find(({ slug }) => slug === params.slug);
+    const product = contentData.find(({ slug }) => slug === params.slug);
     const { categories } = product;
     const recentViewProducts = shuffleArray(productData).slice(0, 5);
     const relatedProducts = productData

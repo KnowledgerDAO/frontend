@@ -18,13 +18,11 @@ const BlogDetailsArea = ({ className, post }) => {
             </div>
             <div className="bd-thumbnail">
                 <div className="large-img mb--30">
-                    {post.images && (
-                        <ReactPlayer
-                            url={post.video_url}
-                            width={919}
-                            height={517}
-                        />
-                    )}
+                    <ReactPlayer
+                        url={post.video_url}
+                        width={919}
+                        height={517}
+                    />
                 </div>
             </div>
             {/* <div

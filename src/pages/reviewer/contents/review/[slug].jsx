@@ -16,6 +16,7 @@ import AllowReviewModal from "@components/modals/review-modal/allow";
 import DenyReviewModal from "@components/modals/review-modal/deny";
 import { useState } from "react";
 import Link from "next/link";
+import contentData from "../../../../data/contents.json";
 
 const ReviewContent = ({
     post,
@@ -33,6 +34,8 @@ const ReviewContent = ({
     const handleDenyModal = () => {
         setShowDenyModal((prev) => !prev);
     };
+
+    console.log(post)
     return (
         <Wrapper>
             <SEO pageTitle="Review pending contents" />
@@ -53,9 +56,9 @@ const ReviewContent = ({
                             </div>
                             <div className="col-xl-4 col-lg-4 mt_md--40 mt_sm--40">
                                 <ReviewSidebar
-                                    categories={categories}
+                                    categories={post.content}
                                     recentPosts={recentPosts}
-                                    tags={tags}
+                                    tags={post.tags}
                                 />
                                 <div className="flex">
                                     <Button
@@ -93,10 +96,8 @@ const ReviewContent = ({
 };
 
 export async function getStaticPaths() {
-    const posts = getAllPosts(["slug"]);
-
     // map through to return post paths
-    const paths = posts.map((post) => ({
+    const paths = contentData.map((post) => ({
         params: {
             slug: post.slug,
         },
@@ -110,28 +111,11 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
     const { slug } = params;
-    const post = getPostBySlug(slug, [
-        "content",
-        "title",
-        "date",
-        "slug",
-        "image",
-        "category",
-    ]);
-    const posts = getAllPosts([
-        "category",
-        "slug",
-        "title",
-        "tags",
-        "image",
-        "timeToRead",
-    ]);
+    const post = contentData.filter((content) => content.slug === slug)[0];
+    const posts = [...contentData];
     const categories = posts.map((blog) => ({ ...blog.category }));
     const tags = posts.map((blog) => [...blog.tags]);
     const recentPosts = posts.slice(0, 4);
-    const relatedPosts = posts
-        .filter((blog) => blog.category.slug === post.category.slug)
-        .slice(0, 3);
 
     return {
         props: {
@@ -140,7 +124,7 @@ export async function getStaticProps({ params }) {
             categories,
             recentPosts,
             tags,
-            relatedPosts,
+
             className: "template-color-1",
         },
     };

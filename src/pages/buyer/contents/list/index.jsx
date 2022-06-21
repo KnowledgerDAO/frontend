@@ -23,6 +23,7 @@ const ListPurchasedContents = () => (
                         (content) => !!content.approved
                     ),
                 }}
+                path="/buyer/contents/video"
             />
         </main>
         <Footer />

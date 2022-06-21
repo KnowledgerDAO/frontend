@@ -19,6 +19,21 @@
         ],
         "video_url": "https://www.youtube.com/watch?v=KHm0uUPqmVE",
         "tags": [[{ "title": "nftcollector", "slug": "nftcollector" }]],
+        "owner": {
+            "name": "Brodband",
+            "slug": "/author",
+            "image": {
+                "src": "/images/client/client-1.png"
+            }
+        },
+        "collection": {
+            "name": "Art Decco",
+            "slug": "/collection",
+            "image": {
+                "src": "/images/client/client-2.png"
+            },
+            "total_sale": "2500,000"
+        },
 
         "images": [
             {
@@ -56,6 +71,21 @@
         },
         "categories": ["file"],
         "tags": [[{ "title": "nftcollector", "slug": "nftcollector" }]],
+        "owner": {
+            "name": "Brodband",
+            "slug": "/author",
+            "image": {
+                "src": "/images/client/client-1.png"
+            }
+        },
+        "collection": {
+            "name": "Art Decco",
+            "slug": "/collection",
+            "image": {
+                "src": "/images/client/client-2.png"
+            },
+            "total_sale": "2500,000"
+        },
         "content": [
             "Lesson 1 - What is DAO",
             "Lesson 2 - How it Works",
@@ -99,6 +129,21 @@
         },
         "categories": ["video"],
         "tags": [["Blockchain", "Ethereum", "SmartContracts"]],
+        "owner": {
+            "name": "Brodband",
+            "slug": "/author",
+            "image": {
+                "src": "/images/client/client-1.png"
+            }
+        },
+        "collection": {
+            "name": "Art Decco",
+            "slug": "/collection",
+            "image": {
+                "src": "/images/client/client-2.png"
+            },
+            "total_sale": "2500,000"
+        },
         "content": [
             "Lesson 1 - What is DAO",
             "Lesson 2 - How it Works",
@@ -141,6 +186,21 @@
         },
         "categories": ["file"],
         "tags": [[{ "title": "nftcollector", "slug": "nftcollector" }]],
+        "owner": {
+            "name": "Brodband",
+            "slug": "/author",
+            "image": {
+                "src": "/images/client/client-1.png"
+            }
+        },
+        "collection": {
+            "name": "Art Decco",
+            "slug": "/collection",
+            "image": {
+                "src": "/images/client/client-2.png"
+            },
+            "total_sale": "2500,000"
+        },
         "content": [
             "Lesson 1 - What is DAO",
             "Lesson 2 - How it Works",
@@ -183,6 +243,21 @@
         },
         "categories": ["video", "file"],
         "tags": [[{ "title": "nftcollector", "slug": "nftcollector" }]],
+        "owner": {
+            "name": "Brodband",
+            "slug": "/author",
+            "image": {
+                "src": "/images/client/client-1.png"
+            }
+        },
+        "collection": {
+            "name": "Art Decco",
+            "slug": "/collection",
+            "image": {
+                "src": "/images/client/client-2.png"
+            },
+            "total_sale": "2500,000"
+        },
         "content": [
             "Lesson 1 - What is DAO",
             "Lesson 2 - How it Works",

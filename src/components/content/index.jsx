@@ -18,6 +18,7 @@ const Content = ({
     image,
     authors,
     placeBid,
+    url
 }) => {
     const [showBidModal, setShowBidModal] = useState(false);
     const handleBidModal = () => {
@@ -34,7 +35,7 @@ const Content = ({
             >
                 <div className="card-thumbnail">
                     {image?.src && (
-                        <Anchor path={`/buyer/contents/video/${slug}`}>
+                        <Anchor path={`${url}/${slug}`}>
                             <Image
                                 src={image.src}
                                 alt={image?.alt || "NFT_portfolio"}

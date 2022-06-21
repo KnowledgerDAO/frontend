@@ -8,6 +8,7 @@ import FilterButton from "@ui/filter-button";
 import { slideToggle } from "@utils/methods";
 import { SectionTitleType, ContentType } from "@utils/types";
 
+
 function reducer(state, action) {
     switch (action.type) {
         case "FILTER_TOGGLE":
@@ -21,7 +22,7 @@ function reducer(state, action) {
     }
 }
 
-const ExploreContentArea = ({ className, space, data, path }) => {
+const ProductArea = ({ className, space, data }) => {
     const itemsToFilter = [...data.products];
     const [state, dispatch] = useReducer(reducer, {
         filterToggle: false,
@@ -130,7 +131,6 @@ const ExploreContentArea = ({ className, space, data, path }) => {
                                         auction_date={prod.auction_date}
                                         image={prod.images?.[0]}
                                         authors={prod.authors}
-                                        url={path}
                                     />
                                 </div>
                             ))}
@@ -144,7 +144,7 @@ const ExploreContentArea = ({ className, space, data, path }) => {
     );
 };
 
-ExploreContentArea.propTypes = {
+ProductArea.propTypes = {
     className: PropTypes.string,
     space: PropTypes.oneOf([1, 2]),
     data: PropTypes.shape({
@@ -154,8 +154,8 @@ ExploreContentArea.propTypes = {
     }),
 };
 
-ExploreContentArea.defaultProps = {
+ProductArea.defaultProps = {
     space: 1,
 };
 
-export default ExploreContentArea;
+export default ProductArea;

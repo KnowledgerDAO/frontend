@@ -11,18 +11,18 @@ const ReviewSidebar = ({
     recentPosts,
     tags,
     rootPage,
-}) => (
-    <aside className={clsx("rwt-sidebar", className)}>
-        {categories?.length > 0 && (
-            <CategoryWidget categories={categories} rootPage={rootPage} />
-        )}
-        {/* <PlaceBet
-            highest_bid={34}
-            auction_date="05-12-2023"
-        /> */}
-        {/* {tags?.length > 0 && <TagWidget tags={tags} rootPage={rootPage} />} */}
-    </aside>
-);
+}) => {
+    const cat = categories.map((cat) => {
+        return { title: cat, slug: cat };
+    });
+    return (
+        <aside className={clsx("rwt-sidebar", className)}>
+            {categories?.length > 0 && (
+                <CategoryWidget categories={cat} rootPage={rootPage} />
+            )}
+        </aside>
+    );
+};
 
 ReviewSidebar.propTypes = {
     className: PropTypes.string,
