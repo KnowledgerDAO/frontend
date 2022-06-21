@@ -64,7 +64,7 @@ const ReviewTable = ({ className, title, isApprovalTable, contents }) => (
 
                                 <td>
                                     <Link href="/reviewer/contents/review/blog-9">
-                                        <Button color={"primary-alta"}>
+                                        <Button color="primary-alta">
                                             Review
                                         </Button>
                                     </Link>

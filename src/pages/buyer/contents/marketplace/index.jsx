@@ -14,7 +14,7 @@ const ListContentMarketplace = () => (
         <Header />
         <main id="main-content">
             <Breadcrumb pageTitle="Buy content" currentPage="Buy content" />
-            <ContentArea data={{ products: contentData }} path="/product"/>
+            <ContentArea data={{ products: contentData }} path="/product" />
         </main>
         <Footer />
     </Wrapper>

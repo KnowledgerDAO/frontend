@@ -12,7 +12,6 @@ import { shuffleArray } from "@utils/methods";
 import productData from "../../data/products.json";
 import contentData from "../../data/contents.json";
 
-
 const ProductDetails = ({ product, recentViewProducts, relatedProducts }) => (
     <Wrapper>
         <SEO pageTitle="Product Details" />

@@ -7,7 +7,6 @@ import Breadcrumb from "@components/breadcrumb";
 import ContentArea from "@containers/content/list-content";
 import contentData from "../../../../data/contents.json";
 
-
 const ListPurchasedContents = () => (
     <Wrapper>
         <SEO pageTitle="List your purchased contents" />

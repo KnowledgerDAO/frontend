@@ -13,14 +13,7 @@ import VideoSidebar from "@containers/video-sidebar";
 
 import contentData from "../../../../data/contents.json";
 
-const BlogDetails = ({
-    post,
-    categories,
-    recentPosts,
-    tags,
-    relatedPosts,
-    content,
-}) => {
+const BlogDetails = ({ post, categories, recentPosts, tags, relatedPosts }) => {
     console.log({ post });
     return (
         <Wrapper>
@@ -91,8 +84,11 @@ export async function getStaticProps({ params }) {
 }
 
 BlogDetails.propTypes = {
-    post: PropTypes.shape({}),
-    categories: PropTypes.arrayOf(PropTypes.shape({})),
+    post: PropTypes.shape({
+        content: PropTypes.shape({}),
+        tags: PropTypes.arrayOf(PropTypes.shape({})),
+    }),
+    categories: PropTypes.arrayOf(PropTypes.string),
     recentPosts: PropTypes.arrayOf(PropTypes.shape({})),
     tags: PropTypes.arrayOf(PropTypes.arrayOf(PropTypes.shape({}))),
     relatedPosts: PropTypes.arrayOf(PropTypes.shape({})),

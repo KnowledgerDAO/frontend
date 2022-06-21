@@ -16,7 +16,7 @@ import AllowReviewModal from "@components/modals/review-modal/allow";
 import DenyReviewModal from "@components/modals/review-modal/deny";
 import { useState } from "react";
 import Link from "next/link";
-import contentData from "../../../../data/contents.json";
+import { getAllPosts, getPostBySlug } from "../../../../lib/api";
 
 const ReviewContent = ({
     post,
@@ -35,7 +35,7 @@ const ReviewContent = ({
         setShowDenyModal((prev) => !prev);
     };
 
-    console.log(post)
+    console.log(post);
     return (
         <Wrapper>
             <SEO pageTitle="Review pending contents" />
@@ -62,7 +62,7 @@ const ReviewContent = ({
                                 />
                                 <div className="flex">
                                     <Button
-                                        color={"primary-alta"}
+                                        color="primary-alta"
                                         className="mt--30 mr--10"
                                         onClick={handleBidModal}
                                     >
@@ -70,7 +70,7 @@ const ReviewContent = ({
                                     </Button>
                                     <Link href="/reviewer/contents/review/feedback">
                                         <Button
-                                            color={"primary-alta"}
+                                            color="primary-alta"
                                             className="mt--30"
                                         >
                                             Deny

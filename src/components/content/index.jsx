@@ -18,7 +18,7 @@ const Content = ({
     image,
     authors,
     placeBid,
-    url
+    url,
 }) => {
     const [showBidModal, setShowBidModal] = useState(false);
     const handleBidModal = () => {
@@ -84,6 +84,7 @@ Content.propTypes = {
         })
     ),
     placeBid: PropTypes.bool,
+    url: PropTypes.string,
 };
 
 Content.defaultProps = {
