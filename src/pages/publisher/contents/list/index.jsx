@@ -22,6 +22,7 @@ const ListContent = () => (
                         )
                     ),
                 }}
+                path="/publisher/contents/video"
             />
         </main>
         <Footer />
