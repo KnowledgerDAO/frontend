@@ -221,8 +221,12 @@ const CreateNewContent = ({ className, space }) => {
                                                             text: "ETH",
                                                         },
                                                         {
-                                                            value: "polkadot address",
-                                                            text: "DOT",
+                                                            value: "dollar usdc address",
+                                                            text: "USDC",
+                                                        },
+                                                        {
+                                                            value: "dollar usdt address",
+                                                            text: "USDT",
                                                         },
                                                     ]}
                                                     placeholder="Choose the token you want to charge buyers"
