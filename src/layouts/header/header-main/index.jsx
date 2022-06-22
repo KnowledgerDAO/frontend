@@ -88,6 +88,17 @@ const Header = ({ className }) => {
                 menu={menuData}
                 logo={headerData.logo}
             />
+            <div className="container color-danger col-lg-12 col-md-12 col-sm-12 col-12 mt_md--40 mt_sm--40">
+                <div className="icon">
+                    <i className={clsx("feather-triangle")} /> Disclaimer:
+                    <span>
+                        {" "}
+                        This is a demo website. It is initially only for showing
+                        purposes and to demonstrate the idea of the project.
+                    </span>
+                </div>
+                <div />
+            </div>
         </>
     );
 };
