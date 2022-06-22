@@ -8,33 +8,33 @@
     "socials": [
         {
             "id": 1,
-            "icon": "feather-facebook",
-            "link": "https://facebook.com",
-            "title": "Facebook"
+            "icon": "feather-github",
+            "link": "https://github.com/KnowledgerDAO",
+            "title": "Github"
         },
         {
             "id": 2,
-            "icon": "feather-twitter",
-            "link": "https://twitter.com",
-            "title": "Twitter"
+            "icon": "feather-mail",
+            "link": "mailto:hello@bridgez.tech",
+            "title": "Send an email to Knowledger"
         },
         {
             "id": 3,
-            "icon": "feather-instagram",
-            "link": "https://instagram.com",
-            "title": "Instagram"
+            "icon": "feather-linkedin",
+            "link": "https://www.linkedin.com/in/pedro-petri-993924163/",
+            "title": "Pedro Petri"
         },
         {
             "id": 4,
             "icon": "feather-linkedin",
-            "link": "https://linkedin.com",
-            "title": "linkedin"
+            "link": "https://www.linkedin.com/in/gabrielrodriguesss/",
+            "title": "Gabriel Rodrigues"
         },
         {
             "id": 5,
-            "icon": "feather-mail",
-            "link": "https://mail.com",
-            "title": "mail"
+            "icon": "feather-linkedin",
+            "link": "https://www.linkedin.com/in/emmanuel-kiametis/",
+            "title": "Emmanuel Kiametis"
         }
     ]
 }

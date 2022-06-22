@@ -67,7 +67,7 @@ const Footer = ({ space, className, data }) => (
         <div className="copy-right-one ptb--20 bg-color--1">
             <div className="container">
                 <div className="row align-items-center">
-                    <div className="col-lg-12 col-md-12 col-sm-12">
+                    <div className="col-lg-6 col-md-12 col-sm-12">
                         <div className="copyright-left">
                             <span>{footerData.copyright_text}</span>
                             <FooterLinkWidget
@@ -75,11 +75,11 @@ const Footer = ({ space, className, data }) => (
                             />
                         </div>
                     </div>
-                    {/* <div className="col-lg-6 col-md-12 col-sm-12">
+                    <div className="col-lg-6 col-md-12 col-sm-12">
                         <div className="copyright-right">
                             <SocialWidget socials={contactData.socials} />
                         </div>
-                    </div> */}
+                    </div>
                 </div>
             </div>
         </div>
