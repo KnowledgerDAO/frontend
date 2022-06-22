@@ -24,6 +24,16 @@
                 "id": 1,
                 "text": "Lightpaper",
                 "path": "/documents/pdf/litepaper.pdf"
+            },
+            {
+                "id": 2,
+                "text": "GitHub",
+                "path": "https://github.com/KnowledgerDAO"
+            },
+            {
+                "id": 3,
+                "text": "Send us an email",
+                "path": "mailto:hello@bridgez.tech"
             }
         ]
     },
