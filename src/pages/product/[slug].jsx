@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import SEO from "@components/seo";
 import Wrapper from "@layout/wrapper";
 import Header from "@layout/header/header-main";
-import Footer from "@layout/footer/footer-01";
+import Footer from "@layout/footer/footer-main";
 import Breadcrumb from "@components/breadcrumb";
 import ProductDetailsArea from "@containers/product-details";
 import ProductArea from "@containers/product/layout-03";
@@ -22,18 +22,6 @@ const ProductDetails = ({ product, recentViewProducts, relatedProducts }) => (
                 currentPage="Product Details"
             />
             <ProductDetailsArea product={product} />
-            <ProductArea
-                data={{
-                    section_title: { title: "Courses from the same Owner" },
-                    products: recentViewProducts,
-                }}
-            />
-            <ProductArea
-                data={{
-                    section_title: { title: "Similar Courses" },
-                    products: relatedProducts,
-                }}
-            />
         </main>
         <Footer />
     </Wrapper>

@@ -63,7 +63,9 @@ const ReviewTable = ({ className, title, isApprovalTable, contents }) => (
                                 </td>
 
                                 <td>
-                                    <Link href="/reviewer/contents/review/blog-9">
+                                    <Link
+                                        href={`/reviewer/contents/review/${item.slug}`}
+                                    >
                                         <Button color="primary-alta">
                                             Review
                                         </Button>
@@ -91,6 +93,7 @@ ReviewTable.propTypes = {
                 amount: PropTypes.string,
                 currency: PropTypes.string,
             }),
+            slug: PropTypes.string,
             categories: PropTypes.arrayOf(PropTypes.string),
             rejectedReason: PropTypes.string,
         })

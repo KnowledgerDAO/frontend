@@ -56,7 +56,7 @@ const Content = ({
                         <div key={author.id}>{author.name}</div>
                     ))}
                 </div>
-                <Anchor path={`/buyer/contents/video/${slug}`}>
+                <Anchor path={`${url}/${slug}`}>
                     <span className="product-name">{title}</span>
                 </Anchor>
                 <ContentInfo price={price} />
