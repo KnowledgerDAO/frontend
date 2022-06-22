@@ -1,12 +1,16 @@
 import Image from "next/image";
 import Anchor from "@ui/anchor";
-import { useMoralis } from "react-moralis";
+import { useMoralis, useTokenPrice } from "react-moralis";
 
 const UserDropdown = () => {
-    const { logout } = useMoralis();
+    const { account, logout, user, chainId } = useMoralis();
+    const { fetchTokenPrice, data } = useTokenPrice({
+        address: account,
+        chain: chainId,
+    });
     return (
         <div className="icon-box">
-            <Anchor path="/author">
+            <Anchor path="/">
                 <Image
                     src="/images/icons/boy-avater.png"
                     alt="Images"
@@ -18,13 +22,15 @@ const UserDropdown = () => {
             <div className="rn-dropdown">
                 <div className="rn-inner-top">
                     <h4 className="title">
-                        <Anchor path="/product">Christopher William</Anchor>
+                        <Anchor path="/">
+                            Username: {user.get("username")}
+                        </Anchor>
                     </h4>
                     <span>
-                        <Anchor path="/product">Set Display Name</Anchor>
+                        <Anchor path="/">Address: {account}</Anchor>
                     </span>
                 </div>
-                <div className="rn-product-inner">
+                {/* <div className="rn-product-inner">
                     <ul className="product-list">
                         <li className="single-product-list">
                             <div className="thumbnail">
@@ -75,9 +81,9 @@ const UserDropdown = () => {
                     >
                         Add Your More Funds
                     </Anchor>
-                </div>
+                </div> */}
                 <ul className="list-inner">
-                    <li>
+                    {/* <li>
                         <Anchor path="/author">My Profile</Anchor>
                     </li>
                     <li>
@@ -85,7 +91,7 @@ const UserDropdown = () => {
                     </li>
                     <li>
                         <Anchor path="/connect">Manage funds</Anchor>
-                    </li>
+                    </li> */}
                     <li>
                         <button type="button" onClick={logout}>
                             Sign Out
