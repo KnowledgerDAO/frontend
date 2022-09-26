@@ -13,35 +13,41 @@ import VideoSidebar from "@containers/video-sidebar";
 
 import contentData from "../../../../data/contents.json";
 
-const BlogDetails = ({ post, categories, recentPosts, tags, relatedPosts }) => (
-    <Wrapper>
-        <SEO pageTitle="Course Details" />
-        <Header />
-        <main id="main-content">
-            <Breadcrumb pageTitle="Course Details" currentPage="Blog Details" />
-            <div className="rn-blog-area rn-blog-details-default rn-section-gapTop">
-                <div className="container">
-                    <div className="row g-6">
-                        <div className="col-xl-8 col-lg-8">
-                            <BlogDetailsArea post={post} />
-                            <CommentsArea />
-                            <CommentForm />
-                            <RelatedPostsArea relatedPosts={relatedPosts} />
-                        </div>
-                        <div className="col-xl-4 col-lg-4 mt_md--40 mt_sm--40">
-                            <VideoSidebar
-                                categories={post.content}
-                                recentPosts={recentPosts}
-                                tags={post.tags}
-                            />
+const BlogDetails = ({ post, categories, recentPosts, tags, relatedPosts }) => {
+    console.log(post)
+    return (
+        <Wrapper>
+            <SEO pageTitle="Course Details" />
+            <Header />
+            <main id="main-content">
+                <Breadcrumb
+                    pageTitle="Course Details"
+                    currentPage="Blog Details"
+                />
+                <div className="rn-blog-area rn-blog-details-default rn-section-gapTop">
+                    <div className="container">
+                        <div className="row g-6">
+                            <div className="col-xl-8 col-lg-8">
+                                <BlogDetailsArea post={post} />
+                                <CommentsArea />
+                                <CommentForm />
+                                <RelatedPostsArea relatedPosts={relatedPosts} />
+                            </div>
+                            <div className="col-xl-4 col-lg-4 mt_md--40 mt_sm--40">
+                                <VideoSidebar
+                                    categories={post.content}
+                                    recentPosts={recentPosts}
+                                    tags={post.tags}
+                                />
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </main>
-        <Footer />
-    </Wrapper>
-);
+            </main>
+            <Footer />
+        </Wrapper>
+    );
+};
 
 export async function getStaticPaths() {
     // map through to return post paths

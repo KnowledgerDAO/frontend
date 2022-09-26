@@ -36,11 +36,11 @@ const Content = ({
                 <div className="card-thumbnail">
                     {image?.src && (
                         <Anchor path={`${url}/${slug}`}>
-                            <Image
+                            <img
                                 src={image.src}
                                 alt={image?.alt || "NFT_portfolio"}
-                                width={533}
-                                height={533}
+                                width="533"
+                                height="533"
                             />
                         </Anchor>
                     )}

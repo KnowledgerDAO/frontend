@@ -7,6 +7,7 @@ import Button from "@ui/button";
 import ProductModal from "@components/modals/product-modal";
 import ErrorText from "@ui/error-text";
 import { toast } from "react-toastify";
+import Accordion from "@components/accordion";
 
 const CreateNewArea = ({ className, space }) => {
     const [showProductModal, setShowProductModal] = useState(false);
@@ -54,6 +55,8 @@ const CreateNewArea = ({ className, space }) => {
 
     return (
         <>
+            <Accordion />
+            <p>safdsdf</p>
             <div
                 className={clsx(
                     "create-area",
@@ -160,7 +163,7 @@ const CreateNewArea = ({ className, space }) => {
                                                     htmlFor="Discription"
                                                     className="form-label"
                                                 >
-                                                    Discription
+                                                    Description
                                                 </label>
                                                 <textarea
                                                     id="discription"
@@ -170,7 +173,7 @@ const CreateNewArea = ({ className, space }) => {
                                                         "discription",
                                                         {
                                                             required:
-                                                                "Discription is required",
+                                                                "Description is required",
                                                         }
                                                     )}
                                                 />

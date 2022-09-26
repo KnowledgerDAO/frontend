@@ -9,6 +9,7 @@ import "../assets/css/feather.css";
 import "../assets/css/modal-video.css";
 import "react-toastify/dist/ReactToastify.css";
 import "../assets/scss/style.scss";
+import StorageState from "src/context/storageState";
 
 const moralisAppId = "y3JZjaaOZUbh1271kfNAL46pkl2pzzuSqnpy7P4D";
 const moralisServerURL = "https://yjshhitafgnh.usemoralis.com:2053/server";
@@ -28,7 +29,9 @@ const MyApp = ({ Component, pageProps }) => {
     return (
         <MoralisProvider appId={moralisAppId} serverUrl={moralisServerURL}>
             <ThemeProvider defaultTheme="dark">
-                <Component {...pageProps} />
+                <StorageState>
+                    <Component {...pageProps} />
+                </StorageState>
             </ThemeProvider>
         </MoralisProvider>
     );

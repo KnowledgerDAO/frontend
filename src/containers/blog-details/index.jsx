@@ -4,9 +4,11 @@ import Image from "next/image";
 import { getMonth } from "@utils/methods";
 import { ImageType } from "@utils/types";
 import ReactPlayer from "react-player";
+import VideoPlayer from "@components/video-player";
 
 const BlogDetailsArea = ({ className, post }) => {
     const date = new Date(post.date);
+    console.log(post)
     return (
         <div className={clsx("blog-details-area", className)}>
             <div className="blog-content-top">
@@ -18,7 +20,7 @@ const BlogDetailsArea = ({ className, post }) => {
             </div>
             <div className="bd-thumbnail">
                 <div className="large-img mb--30">
-                    <ReactPlayer
+                    <VideoPlayer
                         url={post.video_url}
                         width={919}
                         height={517}

@@ -1,0 +1,7 @@
+POST http://localhost:3000/api
+Content-Type: application/json
+
+{
+    "title": "Joao",
+    "video_url":"https://bafybeiggopa4mc7u3jodkxnyrr4lcxywlqp3i6qgsroyzfhoya623amg7a.ipfs.dweb.link/aAG53MR_460sv.mp4"
+}
