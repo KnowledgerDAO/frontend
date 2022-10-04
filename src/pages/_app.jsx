@@ -30,7 +30,9 @@ const MyApp = ({ Component, pageProps }) => {
         <MoralisProvider appId={moralisAppId} serverUrl={moralisServerURL}>
             <ThemeProvider defaultTheme="dark">
                 <StorageState>
-                    <Component {...pageProps} />
+                    <StorageState>
+                        <Component {...pageProps} />
+                    </StorageState>
                 </StorageState>
             </ThemeProvider>
         </MoralisProvider>

@@ -1,0 +1,15 @@
+.lecture-add {
+    border-radius: 5px;
+    border: 2px dashed #575767;
+    cursor: pointer;
+    display: inline-block;
+    padding: 1rem 3rem;
+    width: auto;
+    color: var(--color-primary);
+    font-weight: bold;
+
+    &:hover {
+        border: 2px dashed var(--color-primary);
+        color: var(--color-primary);
+    }
+}

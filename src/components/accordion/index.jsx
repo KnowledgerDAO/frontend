@@ -1,19 +1,19 @@
 import Accordion from "react-bootstrap/Accordion";
+import Acc from "react-bootstrap/Accordion";
 
-function BasicExample(props) {
+function BasicExample({ title, id, children }) {
+    // const { titleObj, id } = props;
     return (
-        <Accordion defaultActiveKey="0">
-            <Accordion.Item eventKey="0">
-                <Accordion.Header>Accordion Item #1</Accordion.Header>
-
-                <Accordion.Body>{props.children}</Accordion.Body>
-            </Accordion.Item>
-            <Accordion.Item eventKey="2">
-                <Accordion.Header>Accordion Item #1</Accordion.Header>
-
-                <Accordion.Body>{props.children}</Accordion.Body>
-            </Accordion.Item>
-        </Accordion>
+        <div className="mt-5">
+            <Acc defaultActiveKey="0">
+                <Acc.Item eventKey="0">
+                    <Acc.Header>
+                        #{id} {title} <i className="feather-chevron-up" />
+                    </Acc.Header>
+                    <Acc.Body>{children}</Acc.Body>
+                </Acc.Item>
+            </Acc>
+        </div>
     );
 }
 

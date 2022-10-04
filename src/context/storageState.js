@@ -7,29 +7,25 @@ import { create } from "ipfs-http-client";
 const client = create(new URL("http://20.121.24.4:5001"));
 
 function StorageState({ children }) {
-    const uploadFile = async ({ file, title, thumbnail }) => {
+    const uploadFile = async ({ file }) => {
         const files = makeFileObjects(file, thumbnail);
         // const cid = await web3storage.store(files);
 
         const obj = await client.add(file);
-        const thumbnailIpfs = await client.add(thumbnail);
-        console.log(obj);
-        console.log(thumbnailIpfs);
 
-        const url = `https://ipfs.io/ipfs/${obj.cid}?filename=${file.name}`
-        const thumbnail_url = `https://ipfs.io/ipfs/${thumbnailIpfs.cid}?filename=${thumbnail.name}`;
+        const url = `https://ipfs.io/ipfs/${obj.cid}?filename=${file.name}`;
 
-        await axios.post("http://localhost:3000/api", {
-            title,
-            video_url: url,
-            thumbnail_url,
-        });
+        return { url };
     };
-    
+
+    const saveCourse = async (data) => {
+        await axios.post("http://localhost:3000/api", data);
+    };
+
     const retrieveFile = () => {};
 
     return (
-        <StorageContext.Provider value={{ uploadFile }}>
+        <StorageContext.Provider value={{ uploadFile, saveCourse }}>
             {children}
         </StorageContext.Provider>
     );

@@ -31,7 +31,7 @@ const CategoryWidget = ({ categories, rootPage }) => {
                         <li key={cat.slug}>
                             <Anchor path={`${rootPage}/category/${cat.slug}`}>
                                 <span className="left-content">
-                                    <BsPlay /> {cat.title}
+                                    <BsPlay /> {cat.title} 
                                 </span>
 
                                 <span className="count-text">Part {i}</span>
