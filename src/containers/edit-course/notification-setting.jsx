@@ -1,6 +1,6 @@
 import Button from "@ui/button";
 
-const NotificationSetting = () => (
+const TagsSetting = () => (
     <div className="nuron-information">
         <h5 className="title">Course Tags </h5>
 
@@ -119,10 +119,7 @@ const NotificationSetting = () => (
 
             <div className="notice-child-wrapper" />
         </div>
-        <Button className="save-btn-edit" size="medium">
-            Save
-        </Button>
     </div>
 );
 
-export default NotificationSetting;
+export default TagsSetting;
