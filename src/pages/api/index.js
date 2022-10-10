@@ -2,23 +2,33 @@
 const { postNewContent } = require("../../helper/retrieve-file-data");
 const { web3Storage } = require("../../service");
 const { v4: uuidv4 } = require("uuid");
+/*      courseName: "",
+        courseBio: "",
+        coursePlaylist: [],
+        thumbnail: "",
+        tags: [], */
 
 export default async function handler(req, res) {
-    const { title, video_url,thumbnail_url } = req.body;
+    const { courseName, courseBio, thumbnail, coursePlaylist, tags } = req.body;
 
     if (req.method === "POST") {
         await postNewContent({
             id: uuidv4(),
-            title: title,
-            slug: title.split(" ").join("-"),
+            title: courseName,
+            slug: courseName.split(" ").join("-"),
             published_at: "20-JUN-2021 08:03:00",
             date: "06-20-2022",
             approved: true,
+            coursePlaylist,
+            thumbnail,
+            courseBio,
+
             price: {
                 amount: 39.99,
                 currency: "USDC",
             },
             categories: ["video", "file"],
+            tagsArr: [tags],
             tags: [[{ title: "nftcollector", slug: "nftcollector" }]],
             owner: {
                 name: "Brodband",
@@ -41,10 +51,10 @@ export default async function handler(req, res) {
                 "Lesson 3 - Getting your hands dirty",
                 "Lesson 4 - Practical use cases",
             ],
-            video_url,
+            video_url: coursePlaylist[0].file,
             images: [
                 {
-                    src: thumbnail_url,
+                    src: thumbnail,
                 },
                 {
                     src: "/images/portfolio/lg/portfolio-02.jpg",

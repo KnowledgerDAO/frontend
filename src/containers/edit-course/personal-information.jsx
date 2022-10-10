@@ -2,15 +2,13 @@ import Button from "@ui/button";
 import NiceSelect from "@ui/nice-select";
 import { useForm } from "react-hook-form";
 
-const CourseInformation = () => {
+const CourseInformation = ({ changeState }) => {
     const {
         register,
         handleSubmit,
         watch,
         formState: { errors },
     } = useForm();
-
-    console.log(watch("courseName"));
 
     return (
         <div className="nuron-information">
@@ -24,7 +22,11 @@ const CourseInformation = () => {
                             name="courseName"
                             id="courseName"
                             type="text"
-                            {...register("courseName")}
+                            {...register("courseName", {
+                                onChange: (e) => {
+                                    changeState(e.target.name, e.target.value);
+                                },
+                            })}
                         />
                     </div>
                 </div>
@@ -33,9 +35,15 @@ const CourseInformation = () => {
                 <label htmlFor="Discription" className="form-label">
                     Course Bio
                 </label>
-                <textarea id="courseBio" {...register("courseBio")}>
-                    This Course is About...
-                </textarea>
+                <textarea
+                    id="courseBio"
+                    placeholder="This Course is About..."
+                    {...register("courseBio", {
+                        onChange: (e) => {
+                            changeState(e.target.name, e.target.value);
+                        },
+                    })}
+                ></textarea>
             </div>
 
             {/* <div className="button-area save-btn-edit">

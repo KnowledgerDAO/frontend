@@ -1,20 +1,23 @@
 [
     {
-        "id": 1,
-        "title": "Understanding DAOs",
-        "slug": "dao-concepts",
+        "id": "9eb28f38-2522-4674-a337-d2035d5484c2",
+        "title": "teste",
+        "slug": "teste",
         "published_at": "20-JUN-2021 08:03:00",
-        "approved": true,
-        "price": { "amount": 23.5, "currency": "DAO" },
         "date": "06-20-2022",
-        "categories": ["video"],
-        "content": [
-            "Lesson 1 - What is DAO",
-            "Lesson 2 - How it Works",
-            "Lesson 3 - Getting your hands dirty",
-            "Lesson 4 - Practical use cases"
+        "approved": true,
+        "coursePlaylist": [
+            {
+                "lectureName": "primeira aula",
+                "lectureBio": "321",
+                "file": "https://ipfs.io/ipfs/QmUnBw2oDjNkG1npKu4Btnka78rLrjBJuigq157ZoXyv1S?filename=Screenshot from 2022-10-07 15-24-33.png"
+            }
         ],
-        "video_url": "https://www.youtube.com/watch?v=KHm0uUPqmVE",
+        "thumbnail": "https://ipfs.io/ipfs/QmTr9Gsmcb1ifykvuBpwzvNDC9mRt9pZgDz4Pomou8yJUs?filename=Screenshot from 2022-10-06 23-42-19.png",
+        "courseBio": "bla bla",
+        "price": { "amount": 39.99, "currency": "USDC" },
+        "categories": ["video", "file"],
+        "tagsArr": [["blockchain", "web3"]],
         "tags": [[{ "title": "nftcollector", "slug": "nftcollector" }]],
         "owner": {
             "name": "Brodband",
@@ -27,8 +30,17 @@
             "image": { "src": "/images/client/client-2.png" },
             "total_sale": "2500,000"
         },
+        "content": [
+            "Lesson 1 - What is DAO",
+            "Lesson 2 - How it Works",
+            "Lesson 3 - Getting your hands dirty",
+            "Lesson 4 - Practical use cases"
+        ],
+        "video_url": "http:fsajkodflkdsj",
         "images": [
-            { "src": "/images/content/dao-1.png" },
+            {
+                "src": "https://ipfs.io/ipfs/QmTr9Gsmcb1ifykvuBpwzvNDC9mRt9pZgDz4Pomou8yJUs?filename=Screenshot from 2022-10-06 23-42-19.png"
+            },
             { "src": "/images/portfolio/lg/portfolio-02.jpg" },
             { "src": "/images/portfolio/lg/portfolio-03.jpg" }
         ],
@@ -42,106 +54,30 @@
         ]
     },
     {
-        "id": 2,
-        "title": "The mistery of blockchain",
-        "slug": "blockchain-mistery",
+        "id": "8f77810f-dd3f-41c0-a594-df3eb7139e95",
+        "title": "Terraform course",
+        "slug": "Terraform-course",
         "published_at": "20-JUN-2021 08:03:00",
-        "approved": false,
-        "rejectedReason": "Corrupted file",
         "date": "06-20-2022",
-        "price": { "amount": 0.1, "currency": "ETH" },
-        "categories": ["file"],
-        "tags": [[{ "title": "nftcollector", "slug": "nftcollector" }]],
-        "owner": {
-            "name": "Brodband",
-            "slug": "/author",
-            "image": { "src": "/images/client/client-1.png" }
-        },
-        "collection": {
-            "name": "Art Decco",
-            "slug": "/collection",
-            "image": { "src": "/images/client/client-2.png" },
-            "total_sale": "2500,000"
-        },
-        "content": [
-            "Lesson 1 - What is DAO",
-            "Lesson 2 - How it Works",
-            "Lesson 3 - Getting your hands dirty",
-            "Lesson 4 - Practical use cases"
-        ],
-        "images": [
-            { "src": "/images/content/blockchain-mistery-1.jpg" },
-            { "src": "/images/portfolio/lg/portfolio-02.jpg" },
-            { "src": "/images/portfolio/lg/portfolio-03.jpg" }
-        ],
-        "video_url": "https://www.youtube.com/watch?v=5LPl9UDq23Q",
-        "authors": [
+        "approved": true,
+        "coursePlaylist": [
             {
-                "id": 1,
-                "name": "Jhon Bueno",
-                "slug": "/author",
-                "image": { "src": "/images/client/client-2.png" }
+                "lectureName": "Primeira Aula",
+                "lectureBio": "bio",
+                "file": "https://ipfs.io/ipfs/Qmb9AZJr3CTAE19GcxwW9SJBGNbxr9oiH1KWgYGhwtVoEx?filename=a5XPRjN_460sv.mp4"
             }
-        ]
-    },
-    {
-        "id": 3,
-        "title": "Token Standards - Learn in practice ERC20, ERC721, ERC1155",
-        "slug": "token-standards",
-        "published_at": "20-JUN-2021 08:03:00",
-        "approved": false,
-        "rejectedReason": "Contains unrelated scene",
-        "date": "06-20-2022",
-        "price": { "amount": 15, "currency": "UNI" },
-        "categories": ["video"],
-        "tags": [
+        ],
+        "thumbnail": "https://ipfs.io/ipfs/QmciWLAi6cxvJEm6TcabQFx7ANcNVhxLd1gJSUMpiZtPoK?filename=Screenshot from 2022-09-09 18-08-07.png",
+        "courseBio": "fsdafds",
+        "price": { "amount": 39.99, "currency": "USDC" },
+        "categories": ["video", "file"],
+        "tagsArr": [
             [
-                { "title": "Blockchain", "slug": "blockchain" },
-                { "title": "Ethereum", "slug": "ethereum" },
-                { "title": "SmartContracts", "slug": "smartcontracts" }
+                { "title": "blockchain", "slug": "blockchain" },
+                { "title": "web3", "slug": "web3" },
+                { "title": "crypto", "slug": "crypto" }
             ]
         ],
-        "owner": {
-            "name": "Brodband",
-            "slug": "/author",
-            "image": { "src": "/images/client/client-1.png" }
-        },
-        "collection": {
-            "name": "Art Decco",
-            "slug": "/collection",
-            "image": { "src": "/images/client/client-2.png" },
-            "total_sale": "2500,000"
-        },
-        "content": [
-            "Lesson 1 - What is DAO",
-            "Lesson 2 - How it Works",
-            "Lesson 3 - Getting your hands dirty",
-            "Lesson 4 - Practical use cases"
-        ],
-        "video_url": "https://www.youtube.com/watch?v=m1SpL25Ydf4",
-        "images": [
-            { "src": "/images/content/ERC20-vs-ERC721-vs-ERC1155-1.png" },
-            { "src": "/images/portfolio/lg/portfolio-02.jpg" },
-            { "src": "/images/portfolio/lg/portfolio-03.jpg" }
-        ],
-        "authors": [
-            {
-                "id": 1,
-                "name": "Alex Davidson",
-                "slug": "/author",
-                "image": { "src": "/images/client/client-2.png" }
-            }
-        ]
-    },
-    {
-        "id": 4,
-        "title": "Demystify crypto market",
-        "slug": "crypto-market",
-        "published_at": "20-JUN-2021 08:03:00",
-        "date": "06-20-2022",
-        "approved": true,
-        "price": { "amount": 20, "currency": "USDT" },
-        "categories": ["file"],
         "tags": [[{ "title": "nftcollector", "slug": "nftcollector" }]],
         "owner": {
             "name": "Brodband",
@@ -160,266 +96,10 @@
             "Lesson 3 - Getting your hands dirty",
             "Lesson 4 - Practical use cases"
         ],
-        "video_url": "https://www.youtube.com/watch?v=e4rXI6UCZao",
-        "images": [
-            { "src": "/images/content/crypto-market-01.jpg" },
-            { "src": "/images/portfolio/lg/portfolio-02.jpg" },
-            { "src": "/images/portfolio/lg/portfolio-03.jpg" }
-        ],
-        "authors": [
-            {
-                "id": 1,
-                "name": "Winston McDonald",
-                "slug": "/author",
-                "image": { "src": "/images/client/client-2.png" }
-            }
-        ]
-    },
-    {
-        "id": 5,
-        "title": "How to become a Blockchain Software Engineer?",
-        "slug": "blockchain-engineer",
-        "published_at": "20-JUN-2021 08:03:00",
-        "date": "06-20-2022",
-        "approved": true,
-        "price": { "amount": 39.99, "currency": "USDC" },
-        "categories": ["video", "file"],
-        "tags": [[{ "title": "nftcollector", "slug": "nftcollector" }]],
-        "owner": {
-            "name": "Brodband",
-            "slug": "/author",
-            "image": { "src": "/images/client/client-1.png" }
-        },
-        "collection": {
-            "name": "Art Decco",
-            "slug": "/collection",
-            "image": { "src": "/images/client/client-2.png" },
-            "total_sale": "2500,000"
-        },
-        "content": [
-            "Lesson 1 - What is DAO",
-            "Lesson 2 - How it Works",
-            "Lesson 3 - Getting your hands dirty",
-            "Lesson 4 - Practical use cases"
-        ],
-        "video_url": "https://www.youtube.com/watch?v=VA-46Goc0e4",
-        "images": [
-            { "src": "/images/content/blockchain-engineer-01.jpeg" },
-            { "src": "/images/portfolio/lg/portfolio-02.jpg" },
-            { "src": "/images/portfolio/lg/portfolio-03.jpg" }
-        ],
-        "authors": [
-            {
-                "id": 1,
-                "name": "Mark Jordan",
-                "slug": "/author",
-                "image": { "src": "/images/client/client-2.png" }
-            }
-        ]
-    },
-    {
-        "id": 6,
-        "title": "How to become a Blockchain Software Engineer?",
-        "slug": "blockchain-engineer",
-        "published_at": "20-JUN-2021 08:03:00",
-        "date": "06-20-2022",
-        "approved": true,
-        "price": { "amount": 39.99, "currency": "USDC" },
-        "categories": ["video", "file"],
-        "tags": [[{ "title": "nftcollector", "slug": "nftcollector" }]],
-        "owner": {
-            "name": "Brodband",
-            "slug": "/author",
-            "image": { "src": "/images/client/client-1.png" }
-        },
-        "collection": {
-            "name": "Art Decco",
-            "slug": "/collection",
-            "image": { "src": "/images/client/client-2.png" },
-            "total_sale": "2500,000"
-        },
-        "content": [
-            "Lesson 1 - What is DAO",
-            "Lesson 2 - How it Works",
-            "Lesson 3 - Getting your hands dirty",
-            "Lesson 4 - Practical use cases"
-        ],
-        "video_url": "https://www.youtube.com/watch?v=VA-46Goc0e4",
-        "images": [
-            { "src": "/images/content/blockchain-engineer-01.jpeg" },
-            { "src": "/images/portfolio/lg/portfolio-02.jpg" },
-            { "src": "/images/portfolio/lg/portfolio-03.jpg" }
-        ],
-        "authors": [
-            {
-                "id": 1,
-                "name": "Mark Jordan",
-                "slug": "/author",
-                "image": { "src": "/images/client/client-2.png" }
-            }
-        ]
-    },
-    {
-        "id": "6d62ada2-0810-4a33-9793-8c75e7671afc",
-        "title": "Joao",
-        "slug": "joao",
-        "published_at": "20-JUN-2021 08:03:00",
-        "date": "06-20-2022",
-        "approved": true,
-        "price": { "amount": 39.99, "currency": "USDC" },
-        "categories": ["video", "file"],
-        "tags": [[{ "title": "nftcollector", "slug": "nftcollector" }]],
-        "owner": {
-            "name": "Brodband",
-            "slug": "/author",
-            "image": { "src": "/images/client/client-1.png" }
-        },
-        "collection": {
-            "name": "Art Decco",
-            "slug": "/collection",
-            "image": { "src": "/images/client/client-2.png" },
-            "total_sale": "2500,000"
-        },
-        "content": [
-            "Lesson 1 - What is DAO",
-            "Lesson 2 - How it Works",
-            "Lesson 3 - Getting your hands dirty",
-            "Lesson 4 - Practical use cases"
-        ],
-        "video_url": "https://bafybeiggopa4mc7u3jodkxnyrr4lcxywlqp3i6qgsroyzfhoya623amg7a.ipfs.dweb.link/aAG53MR_460sv.mp4",
-        "images": [
-            { "src": "/images/content/blockchain-engineer-01.jpeg" },
-            { "src": "/images/portfolio/lg/portfolio-02.jpg" },
-            { "src": "/images/portfolio/lg/portfolio-03.jpg" }
-        ],
-        "authors": [
-            {
-                "id": 1,
-                "name": "Mark Jordan",
-                "slug": "/author",
-                "image": { "src": "/images/client/client-2.png" }
-            }
-        ]
-    },
-    {
-        "id": "81a01831-9414-4e71-8cc5-4aea39e38a24",
-        "title": "How to something",
-        "slug": "how-to-something",
-        "published_at": "20-JUN-2021 08:03:00",
-        "date": "06-20-2022",
-        "approved": true,
-        "price": { "amount": 39.99, "currency": "USDC" },
-        "categories": ["video", "file"],
-        "tags": [[{ "title": "nftcollector", "slug": "nftcollector" }]],
-        "owner": {
-            "name": "Brodband",
-            "slug": "/author",
-            "image": { "src": "/images/client/client-1.png" }
-        },
-        "collection": {
-            "name": "Art Decco",
-            "slug": "/collection",
-            "image": { "src": "/images/client/client-2.png" },
-            "total_sale": "2500,000"
-        },
-        "content": [
-            "Lesson 1 - What is DAO",
-            "Lesson 2 - How it Works",
-            "Lesson 3 - Getting your hands dirty",
-            "Lesson 4 - Practical use cases"
-        ],
-        "video_url": "https://bafybeiffcu27w7b5exbayuxzfdiueyhqd77rymuszgceuor5vnttkudzju.ipfs.dweb.link/aGz5gqn_460sv.mp4",
+        "video_url": "https://ipfs.io/ipfs/Qmb9AZJr3CTAE19GcxwW9SJBGNbxr9oiH1KWgYGhwtVoEx?filename=a5XPRjN_460sv.mp4",
         "images": [
             {
-                "src": "https://bafybeiffcu27w7b5exbayuxzfdiueyhqd77rymuszgceuor5vnttkudzju.ipfs.dweb.link/nonperson.jpg"
-            },
-            { "src": "/images/portfolio/lg/portfolio-02.jpg" },
-            { "src": "/images/portfolio/lg/portfolio-03.jpg" }
-        ],
-        "authors": [
-            {
-                "id": 1,
-                "name": "Mark Jordan",
-                "slug": "/author",
-                "image": { "src": "/images/client/client-2.png" }
-            }
-        ]
-    },
-    {
-        "id": "c48491ef-fe06-4fc9-b049-eeeda0695ce0",
-        "title": "Nome do curso",
-        "slug": "nome-do-curso",
-        "published_at": "20-JUN-2021 08:03:00",
-        "date": "06-20-2022",
-        "approved": true,
-        "price": { "amount": 39.99, "currency": "USDC" },
-        "categories": ["video", "file"],
-        "tags": [[{ "title": "nftcollector", "slug": "nftcollector" }]],
-        "owner": {
-            "name": "Brodband",
-            "slug": "/author",
-            "image": { "src": "/images/client/client-1.png" }
-        },
-        "collection": {
-            "name": "Art Decco",
-            "slug": "/collection",
-            "image": { "src": "/images/client/client-2.png" },
-            "total_sale": "2500,000"
-        },
-        "content": [
-            "Lesson 1 - What is DAO",
-            "Lesson 2 - How it Works",
-            "Lesson 3 - Getting your hands dirty",
-            "Lesson 4 - Practical use cases"
-        ],
-        "video_url": "https://bafybeiac3kq7axmzogossxguyfwnrfuiwcjn4srvugdbteuzybon532hkm.ipfs.dweb.link/aWg5x2x_460sv.mp4",
-        "images": [
-            {
-                "src": "https://bafybeiac3kq7axmzogossxguyfwnrfuiwcjn4srvugdbteuzybon532hkm.ipfs.dweb.link/nonperson.jpg"
-            },
-            { "src": "/images/portfolio/lg/portfolio-02.jpg" },
-            { "src": "/images/portfolio/lg/portfolio-03.jpg" }
-        ],
-        "authors": [
-            {
-                "id": 1,
-                "name": "Mark Jordan",
-                "slug": "/author",
-                "image": { "src": "/images/client/client-2.png" }
-            }
-        ]
-    },
-    {
-        "id": "2c6bee07-8421-4013-8abe-683a03fb0bf6",
-        "title": "terraform",
-        "slug": "terraform",
-        "published_at": "20-JUN-2021 08:03:00",
-        "date": "06-20-2022",
-        "approved": true,
-        "price": { "amount": 39.99, "currency": "USDC" },
-        "categories": ["video", "file"],
-        "tags": [[{ "title": "nftcollector", "slug": "nftcollector" }]],
-        "owner": {
-            "name": "Brodband",
-            "slug": "/author",
-            "image": { "src": "/images/client/client-1.png" }
-        },
-        "collection": {
-            "name": "Art Decco",
-            "slug": "/collection",
-            "image": { "src": "/images/client/client-2.png" },
-            "total_sale": "2500,000"
-        },
-        "content": [
-            "Lesson 1 - What is DAO",
-            "Lesson 2 - How it Works",
-            "Lesson 3 - Getting your hands dirty",
-            "Lesson 4 - Practical use cases"
-        ],
-        "video_url": "https://ipfs.io/ipfs/QmaPcqGyK1YBtQ58LPAkZ4pnWSamjcPxQbq89sB4PimaXe?filename=aDYAe6O_460sv.mp4",
-        "images": [
-            {
-                "src": "https://ipfs.io/ipfs/Qmd9k9xQN5nLDmEZKEgtxsEi8ANyB3Jtn5pWFZaFs8EMGr?filename=Agencia_Correios_Posta_Restante1.jpg"
+                "src": "https://ipfs.io/ipfs/QmciWLAi6cxvJEm6TcabQFx7ANcNVhxLd1gJSUMpiZtPoK?filename=Screenshot from 2022-09-09 18-08-07.png"
             },
             { "src": "/images/portfolio/lg/portfolio-02.jpg" },
             { "src": "/images/portfolio/lg/portfolio-03.jpg" }

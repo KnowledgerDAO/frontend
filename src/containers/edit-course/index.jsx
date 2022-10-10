@@ -6,30 +6,65 @@ import TabPane from "react-bootstrap/TabPane";
 import Nav from "react-bootstrap/Nav";
 import EditProfileImage from "./edit-profile-image";
 import PersonalInformation from "./personal-information";
-import ChangePassword from "./change-password";
 import NotificationSetting from "./notification-setting";
-import SectionCard from "@components/section-card";
-import Accordion from "@components/accordion";
-import CourseForm from "@containers/course-form";
-import { useState } from "react";
+import { useState, useContext, useEffect } from "react";
 import CourseSettingArea from "@components/course-setting-area";
+import storageContext from "src/context/storageContext";
 
 const EditCourseArea = () => {
-    const [state, setState] = useState();
+    const [state, setState] = useState({
+        courseName: "",
+        courseBio: "",
+        coursePlaylist: [],
+        tags: [],
+    });
 
-    
+    const [thumbnail, setThumbnail] = useState({});
+
+    const { uploadFile, saveCourse } = useContext(storageContext);
+
+    function changeState(key, value) {
+        setState({ ...state, [key]: value });
+    }
+
+    function addVideoCourse(videoData) {
+        setState({
+            ...state,
+            coursePlaylist: [...state.coursePlaylist, videoData],
+        });
+    }
+
+    function addTags(tagsObj) {
+        const tagsArr = Object.keys(tagsObj);
+        const tags = tagsArr
+            .filter((tag) => !!tagsObj[tag])
+            .map((t) => {
+                return { title: t, slug: t };
+            });
+        setState({ ...state, tags: [...tags] });
+    }
+
+    async function onClick() {
+        const { url } = await uploadFile({ file: state.thumbnail });
+        await saveCourse({ ...state, thumbnail: url });
+    }
+
+    function addThumbnail(file) {
+        setState({ ...state, thumbnail: file });
+    }
+
     return (
         <div className="edit-profile-area rn-section-gapTop">
             <div className="container">
                 <div className="row plr--70 padding-control-edit-wrapper pl_md--0 pr_md--0 pl_sm--0 pr_sm--0">
                     <div className="col-12 d-flex justify-content-between mb--30 align-items-center">
                         <h4 className="title-left">Course Settings</h4>
-                        <Anchor
-                            path="/author"
+                        <button
                             className="btn btn-primary ml--10"
+                            onClick={onClick}
                         >
                             <i className="feather-eye mr--5" /> Publish Course
-                        </Anchor>
+                        </button>
                     </div>
                 </div>
                 <TabContainer defaultActiveKey="nav-home">
@@ -73,16 +108,23 @@ const EditCourseArea = () => {
                         <div className="col-lg-9 col-md-9 col-sm-12 mt_sm--30">
                             <TabContent className="tab-content-edit-wrapepr">
                                 <TabPane eventKey="nav-home">
-                                    <PersonalInformation />
+                                    <PersonalInformation
+                                        changeState={changeState}
+                                    />
                                 </TabPane>
                                 <TabPane eventKey="nav-homes">
-                                    <CourseSettingArea />
+                                    <CourseSettingArea
+                                        changeState={changeState}
+                                        addVideoCourse={addVideoCourse}
+                                    />
                                 </TabPane>
                                 <TabPane eventKey="nav-profile">
-                                    <EditProfileImage />
+                                    <EditProfileImage
+                                        addThumbnail={addThumbnail}
+                                    />
                                 </TabPane>
                                 <TabPane eventKey="nav-contact">
-                                    <NotificationSetting />
+                                    <NotificationSetting addTags={addTags} />
                                 </TabPane>
                             </TabContent>
                         </div>

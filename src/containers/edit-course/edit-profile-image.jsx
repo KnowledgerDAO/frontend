@@ -1,19 +1,15 @@
 /* eslint-disable @next/next/no-img-element */
-import { useState } from "react";
+import { useState, useContext, useEffect } from "react";
+import storageContext from "src/context/storageContext";
 import Image from "next/image";
 
-const EditProfileImage = () => {
+const EditProfileImage = ({ addThumbnail }) => {
     const [selectedImage, setSelectedImage] = useState({
-        profile: "",
         cover: "",
     });
     const imageChange = (e) => {
-        if (e.target.files && e.target.files.length > 0) {
-            setSelectedImage((prev) => ({
-                ...prev,
-                [e.target.name]: e.target.files[0],
-            }));
-        }
+        setSelectedImage({ cover: e.target.files[0] });
+        addThumbnail(e.target.files[0]);
     };
 
     return (

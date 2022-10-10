@@ -17,14 +17,13 @@
             {
                 "id": 31,
                 "text": "Publish your content",
-                "path": "/publisher/contents/create"
+                "path": "/edit-course"
             },
             {
                 "id": 32,
                 "text": "List your contents",
                 "path": "/publisher/contents/list"
             }
-            
         ]
     },
     {

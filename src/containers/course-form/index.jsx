@@ -1,16 +1,19 @@
 import React, { useState, useContext } from "react";
 import Button from "@ui/button";
-import { BiAddToQueue } from "react-icons/bi";
 import ErrorText from "@ui/error-text";
-import NiceSelect from "@ui/nice-select";
 import StorageContext from "src/context/storageContext";
 import { useForm } from "react-hook-form";
+import { toast } from "react-toastify";
 
-function CourseForm({ changeTitle, index }) {
+function CourseForm({ changeTitle, index, addVideoCourse }) {
     const [selectedImage, setSelectedImage] = useState();
     const [hasImageError, setHasImageError] = useState(false);
-    const [tokenType, setTokenType] = useState("");
-    const [thumbnail, setThumbnail] = useState("");
+    const [state, setState] = useState({
+        id: index,
+        lectureBio: "",
+        lectureName: "",
+        file: "",
+    });
 
     const { uploadFile } = useContext(StorageContext);
 
@@ -24,28 +27,15 @@ function CourseForm({ changeTitle, index }) {
         mode: "onChange",
     });
 
-    const watchPrice = watch("price", "0.0");
-    const watchPrizePercentage = watch("prize_percentage", "0.0");
-    const watchNetworkPercentage = watch("network_percentage", "0.0");
-
-    const notify = () => toast("Your content has submitted");
+    const notify = () => toast("Your lecture has been published");
 
     // This function will be triggered when the file field change
     const imageChange = (e) => {
         if (e.target.files && e.target.files.length > 0) {
             setSelectedImage(e.target.files[0]);
-            console.log(selectedImage);
+            setState({ ...state, file: e.target.files[0] });
+            console.log(state);
         }
-    };
-
-    const thumbNailChange = (e) => {
-        if (e.target.files && e.target.files.length > 0) {
-            setThumbnail(e.target.files[0]);
-        }
-    };
-
-    const tokenChange = ({ text }) => {
-        setTokenType(text);
     };
 
     const onSubmit = async (data, e) => {
@@ -61,26 +51,20 @@ function CourseForm({ changeTitle, index }) {
         }
         if (!isPreviewBtn) {
             notify();
-            reset();
-            setSelectedImage();
+            // setSelectedImage();
         }
 
-        const a = await uploadFile({
-            file: selectedImage,
-            title: data.name,
-            thumbnail: thumbnail,
-        });
+        const { url } = await uploadFile({ file: state.file });
 
-        console.log(a);
+        console.log(url);
+
+        addVideoCourse({ ...data, file: url });
     };
 
     return (
         <div className="container">
             <div className="row">
                 <div className="col-40">
-                    {/* <div> */}
-                    {/* <SectionCourseEdit> */}
-                    {/* <Accordion> */}
                     <form action="#" onSubmit={handleSubmit(onSubmit)}>
                         <div className="container pt-3">
                             <div className="row g-5">
@@ -128,32 +112,6 @@ function CourseForm({ changeTitle, index }) {
                                             </ErrorText>
                                         )}
                                     </div>
-
-                                    {/* <div className="mt--100 mt_sm--30 mt_md--30 d-none d-lg-block">
-                                        <h5> Note: </h5>
-                                        <br />
-                                        <span>
-                                            Price :{" "}
-                                            <strong>
-                                                {watchPrice} {tokenType}
-                                            </strong>
-                                        </span>
-                                        <br />
-                                        <span>
-                                            Prize percentage :{" "}
-                                            <strong>
-                                                {watchPrizePercentage} %
-                                            </strong>
-                                        </span>
-                                        <br />
-
-                                        <span>
-                                            Network percentage :{" "}
-                                            <strong>
-                                                {watchNetworkPercentage} %
-                                            </strong>
-                                        </span>
-                                    </div> */}
                                 </div>
                                 <div className="col-lg-7">
                                     <div className="form-wrapper-one">
@@ -164,22 +122,37 @@ function CourseForm({ changeTitle, index }) {
                                                         htmlFor="name"
                                                         className="form-label"
                                                     >
-                                                        Product Name
+                                                        Lecture Name
                                                     </label>
                                                     <input
                                                         id="name"
                                                         placeholder="Type a name for your own content here ..."
-                                                        {...register("name", {
-                                                            required:
-                                                                "Product name is required",
-                                                            onChange: (e) => {
-                                                                changeTitle(
-                                                                    index,
-                                                                    e.target
-                                                                        .value
-                                                                );
-                                                            },
-                                                        })}
+                                                        {...register(
+                                                            "lectureName",
+                                                            {
+                                                                required:
+                                                                    "Product name is required",
+                                                                onChange: (
+                                                                    e
+                                                                ) => {
+                                                                    setState({
+                                                                        ...state,
+                                                                        lectureName:
+                                                                            e
+                                                                                .target
+                                                                                .value,
+                                                                    });
+                                                                    console.log(
+                                                                        state
+                                                                    );
+                                                                    changeTitle(
+                                                                        index,
+                                                                        e.target
+                                                                            .value
+                                                                    );
+                                                                },
+                                                            }
+                                                        )}
                                                     />
                                                     {errors.name && (
                                                         <ErrorText>
@@ -198,17 +171,31 @@ function CourseForm({ changeTitle, index }) {
                                                         htmlFor="summary"
                                                         className="form-label"
                                                     >
-                                                        Summary
+                                                        Lecture Bio
                                                     </label>
                                                     <textarea
                                                         id="summary"
                                                         rows="3"
                                                         placeholder="Type a brief summary of your product here ..."
                                                         {...register(
-                                                            "summary",
+                                                            "lectureBio",
                                                             {
                                                                 required:
-                                                                    "Summary is required",
+                                                                    "Lecture Bio is required",
+                                                                onChange: (
+                                                                    e
+                                                                ) => {
+                                                                    setState({
+                                                                        ...state,
+                                                                        lectureBio:
+                                                                            e
+                                                                                .target
+                                                                                .value,
+                                                                    });
+                                                                    console.log(
+                                                                        state
+                                                                    );
+                                                                },
                                                             }
                                                         )}
                                                     />
@@ -222,166 +209,7 @@ function CourseForm({ changeTitle, index }) {
                                                     )}
                                                 </div>
                                             </div>
-                                            {/* <div className="col-md-12">
-                                                <div className="input-box pb--20">
-                                                    <label
-                                                        htmlFor="token"
-                                                        className="form-label"
-                                                    >
-                                                        Token Type
-                                                    </label>
-                                                    <NiceSelect
-                                                        id="token"
-                                                        name="token"
-                                                        options={[
-                                                            {
-                                                                value: "ethereum address",
-                                                                text: "ETH",
-                                                            },
-                                                            {
-                                                                value: "dollar usdc address",
-                                                                text: "USDC",
-                                                            },
-                                                            {
-                                                                value: "dollar usdt address",
-                                                                text: "USDT",
-                                                            },
-                                                        ]}
-                                                        placeholder="Choose the token you want to charge buyers"
-                                                        onChange={tokenChange}
-                                                    />
-                                                    {errors.token && (
-                                                        <ErrorText>
-                                                            {
-                                                                errors.token
-                                                                    ?.message
-                                                            }
-                                                        </ErrorText>
-                                                    )}
-                                                </div>
-                                            </div>
 
-                                            <div className="col-md-4">
-                                                <div className="input-box pb--20">
-                                                    <label
-                                                        htmlFor="price"
-                                                        className="form-label"
-                                                    >
-                                                        Item Price in ERC20
-                                                        token
-                                                    </label>
-                                                    <input
-                                                        id="price"
-                                                        placeholder="e. g. `2 eth`"
-                                                        type="number"
-                                                        {...register("price", {
-                                                            setValueAs: (v) =>
-                                                                parseInt(v, 10),
-                                                            min: {
-                                                                value: 0.1,
-                                                                message:
-                                                                    "The minimum value is 0.1",
-                                                            },
-                                                            required:
-                                                                "Price is required",
-                                                        })}
-                                                    />
-                                                    {errors.price && (
-                                                        <ErrorText>
-                                                            {
-                                                                errors.price
-                                                                    ?.message
-                                                            }
-                                                        </ErrorText>
-                                                    )}
-                                                </div>
-                                            </div>
-
-                                            <div className="col-md-4">
-                                                <div className="input-box pb--20">
-                                                    <label
-                                                        htmlFor="prize_percentage"
-                                                        className="form-label"
-                                                    >
-                                                        Prize percentage
-                                                    </label>
-                                                    <input
-                                                        id="prize_percentage"
-                                                        placeholder="% able to to pay reviewers"
-                                                        type="number"
-                                                        {...register(
-                                                            "prize_percentage",
-                                                            {
-                                                                min: {
-                                                                    value: 1,
-                                                                    message:
-                                                                        "The minimum value is 1%",
-                                                                },
-                                                                max: {
-                                                                    value: 3,
-                                                                    message:
-                                                                        "The minimum value is 3%",
-                                                                },
-                                                                required:
-                                                                    "Prize percentage is required",
-                                                            }
-                                                        )}
-                                                    />
-                                                    {errors.prize_percentage && (
-                                                        <ErrorText>
-                                                            {
-                                                                errors
-                                                                    .prize_percentage
-                                                                    ?.message
-                                                            }
-                                                        </ErrorText>
-                                                    )}
-                                                </div>
-                                            </div>
-
-                                            <div className="col-md-4">
-                                                <div className="input-box pb--20">
-                                                    <label
-                                                        htmlFor="network_percentage"
-                                                        className="form-label"
-                                                    >
-                                                        Network percentage
-                                                    </label>
-                                                    <input
-                                                        id="network_percentage"
-                                                        placeholder="% to bonuses the network"
-                                                        type="number"
-                                                        disabled
-                                                        {...register(
-                                                            "network_percentage",
-                                                            {
-                                                                value: 3.0,
-                                                                min: {
-                                                                    value: 3,
-                                                                    message:
-                                                                        "The minimum value is 3%",
-                                                                },
-                                                                max: {
-                                                                    value: 3,
-                                                                    message:
-                                                                        "The minimum value is 3%",
-                                                                },
-                                                                required:
-                                                                    "Network percentage is required",
-                                                            }
-                                                        )}
-                                                    />
-                                                    {errors.network_percentage && (
-                                                        <ErrorText>
-                                                            {
-                                                                errors
-                                                                    .network_percentage
-                                                                    ?.message
-                                                            }
-                                                        </ErrorText>
-                                                    )}
-                                                </div>
-                                            </div> */}
                                             <div className="col-md-12 col-xl-12 mt_lg--15 mt_md--15 mt_sm--15">
                                                 <div className="input-box">
                                                     <Button
