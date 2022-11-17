@@ -2,11 +2,6 @@
 const { postNewContent } = require("../../helper/retrieve-file-data");
 const { web3Storage } = require("../../service");
 const { v4: uuidv4 } = require("uuid");
-/*      courseName: "",
-        courseBio: "",
-        coursePlaylist: [],
-        thumbnail: "",
-        tags: [], */
 
 export default async function handler(req, res) {
     const { courseName, courseBio, thumbnail, coursePlaylist, tags } = req.body;

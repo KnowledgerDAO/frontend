@@ -10,11 +10,14 @@ import CommentForm from "@components/comment-form";
 import RelatedPostsArea from "@containers/related-posts";
 import BlogSidebar from "@containers/blog-sidebar";
 import VideoSidebar from "@containers/video-sidebar";
-
+import { useRouter } from "next/router";
 import contentData from "../../../../data/contents.json";
 
 const BlogDetails = ({ post, categories, recentPosts, tags, relatedPosts }) => {
-  
+    const router = useRouter();
+
+    const { cid } = router.query;
+
     return (
         <Wrapper>
             <SEO pageTitle="Course Details" />
@@ -28,7 +31,7 @@ const BlogDetails = ({ post, categories, recentPosts, tags, relatedPosts }) => {
                     <div className="container">
                         <div className="row g-6">
                             <div className="col-xl-8 col-lg-8">
-                                <BlogDetailsArea post={post} />
+                                <BlogDetailsArea post={post} cid={cid} />
                                 <CommentsArea />
                                 <CommentForm />
                                 <RelatedPostsArea relatedPosts={relatedPosts} />
@@ -38,6 +41,8 @@ const BlogDetails = ({ post, categories, recentPosts, tags, relatedPosts }) => {
                                     categories={post.tagsArr[0]}
                                     recentPosts={recentPosts}
                                     tags={post.tagsArr[0]}
+                                    post={post}
+                                    coursePlaylist={post.coursePlaylist}
                                 />
                             </div>
                         </div>
