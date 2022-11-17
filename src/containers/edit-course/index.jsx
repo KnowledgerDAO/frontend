@@ -46,6 +46,7 @@ const EditCourseArea = () => {
 
     async function onClick() {
         const { url } = await uploadFile({ file: state.thumbnail });
+
         await saveCourse({ ...state, thumbnail: url });
     }
 
