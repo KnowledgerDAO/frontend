@@ -8,6 +8,7 @@
         "approved": true,
         "coursePlaylist": [
             {
+                "cid": "QmUnBw2oDjNkG1npKu4Btnka78rLrjBJuigq157ZoXyv1S",
                 "lectureName": "primeira aula",
                 "lectureBio": "321",
                 "file": "https://ipfs.io/ipfs/QmUnBw2oDjNkG1npKu4Btnka78rLrjBJuigq157ZoXyv1S?filename=Screenshot from 2022-10-07 15-24-33.png"
@@ -62,6 +63,7 @@
         "approved": true,
         "coursePlaylist": [
             {
+                "cid": "Qmb9AZJr3CTAE19GcxwW9SJBGNbxr9oiH1KWgYGhwtVoEx",
                 "lectureName": "Primeira Aula",
                 "lectureBio": "bio",
                 "file": "https://ipfs.io/ipfs/Qmb9AZJr3CTAE19GcxwW9SJBGNbxr9oiH1KWgYGhwtVoEx?filename=a5XPRjN_460sv.mp4"
@@ -100,6 +102,456 @@
         "images": [
             {
                 "src": "https://ipfs.io/ipfs/QmciWLAi6cxvJEm6TcabQFx7ANcNVhxLd1gJSUMpiZtPoK?filename=Screenshot from 2022-09-09 18-08-07.png"
+            },
+            { "src": "/images/portfolio/lg/portfolio-02.jpg" },
+            { "src": "/images/portfolio/lg/portfolio-03.jpg" }
+        ],
+        "authors": [
+            {
+                "id": 1,
+                "name": "Mark Jordan",
+                "slug": "/author",
+                "image": { "src": "/images/client/client-2.png" }
+            }
+        ]
+    },
+    {
+        "id": "f94490c7-18da-40cc-bb75-3e582b7274a9",
+        "title": "Curso de aws",
+        "slug": "Curso-de-aws",
+        "published_at": "20-JUN-2021 08:03:00",
+        "date": "06-20-2022",
+        "approved": true,
+        "coursePlaylist": [
+            {
+                "cid": "QmTbZ7B8Ni4XMW12jyYVTWfmufEthVMp3ZskJEqxvMHmz5",
+                "lectureName": "aula 1",
+                "lectureBio": "fsdafds",
+                "file": "https://ipfs.io/ipfs/QmTbZ7B8Ni4XMW12jyYVTWfmufEthVMp3ZskJEqxvMHmz5?filename=abvyVPp_460sv.mp4"
+            }
+        ],
+        "thumbnail": "https://ipfs.io/ipfs/QmWzZ4LpUmZvDnus61zVsgTEHgUxzPxwXx4TxKPWZwS4XX?filename=Screenshot from 2022-10-03 14-46-58.png",
+        "courseBio": "fsdafdsfsdfasd",
+        "price": { "amount": 39.99, "currency": "USDC" },
+        "categories": ["video", "file"],
+        "tagsArr": [
+            [
+                { "title": "blockchain", "slug": "blockchain" },
+                { "title": "crypto", "slug": "crypto" },
+                { "title": "programming", "slug": "programming" }
+            ]
+        ],
+        "tags": [[{ "title": "nftcollector", "slug": "nftcollector" }]],
+        "owner": {
+            "name": "Brodband",
+            "slug": "/author",
+            "image": { "src": "/images/client/client-1.png" }
+        },
+        "collection": {
+            "name": "Art Decco",
+            "slug": "/collection",
+            "image": { "src": "/images/client/client-2.png" },
+            "total_sale": "2500,000"
+        },
+        "content": [
+            "Lesson 1 - What is DAO",
+            "Lesson 2 - How it Works",
+            "Lesson 3 - Getting your hands dirty",
+            "Lesson 4 - Practical use cases"
+        ],
+        "video_url": "https://ipfs.io/ipfs/QmTbZ7B8Ni4XMW12jyYVTWfmufEthVMp3ZskJEqxvMHmz5?filename=abvyVPp_460sv.mp4",
+        "images": [
+            {
+                "src": "https://ipfs.io/ipfs/QmWzZ4LpUmZvDnus61zVsgTEHgUxzPxwXx4TxKPWZwS4XX?filename=Screenshot from 2022-10-03 14-46-58.png"
+            },
+            { "src": "/images/portfolio/lg/portfolio-02.jpg" },
+            { "src": "/images/portfolio/lg/portfolio-03.jpg" }
+        ],
+        "authors": [
+            {
+                "id": 1,
+                "name": "Mark Jordan",
+                "slug": "/author",
+                "image": { "src": "/images/client/client-2.png" }
+            }
+        ]
+    },
+    {
+        "id": "5ff9b112-ce31-4ae4-800b-5c931110dab4",
+        "title": "curso de seila oq",
+        "slug": "curso-de-seila-oq",
+        "published_at": "20-JUN-2021 08:03:00",
+        "date": "06-20-2022",
+        "approved": true,
+        "coursePlaylist": [
+            {
+                "cid": "QmWWh6MLXVWELakwRkMbMt8jM1gNpYaV1c52BQmwNku7x3",
+                "lectureName": "primeira aula",
+                "lectureBio": "kkk",
+                "file": "https://ipfs.io/ipfs/QmWWh6MLXVWELakwRkMbMt8jM1gNpYaV1c52BQmwNku7x3?filename=aQEnggw_460sv.mp4"
+            }
+        ],
+        "thumbnail": "https://ipfs.io/ipfs/QmYfo8Hw9o6fhqS4x4txewdeibeZr8G5b639qHQ18FXdD6?filename=phoca_thumb_l_image03_grd.png",
+        "courseBio": "bklśdajfgçlkdsahjfklçds",
+        "price": { "amount": 39.99, "currency": "USDC" },
+        "categories": ["video", "file"],
+        "tagsArr": [
+            [
+                { "title": "blockchain", "slug": "blockchain" },
+                { "title": "web3", "slug": "web3" },
+                { "title": "crypto", "slug": "crypto" }
+            ]
+        ],
+        "tags": [[{ "title": "nftcollector", "slug": "nftcollector" }]],
+        "owner": {
+            "name": "Brodband",
+            "slug": "/author",
+            "image": { "src": "/images/client/client-1.png" }
+        },
+        "collection": {
+            "name": "Art Decco",
+            "slug": "/collection",
+            "image": { "src": "/images/client/client-2.png" },
+            "total_sale": "2500,000"
+        },
+        "content": [
+            "Lesson 1 - What is DAO",
+            "Lesson 2 - How it Works",
+            "Lesson 3 - Getting your hands dirty",
+            "Lesson 4 - Practical use cases"
+        ],
+        "video_url": "https://ipfs.io/ipfs/QmWWh6MLXVWELakwRkMbMt8jM1gNpYaV1c52BQmwNku7x3?filename=aQEnggw_460sv.mp4",
+        "images": [
+            {
+                "src": "https://ipfs.io/ipfs/QmYfo8Hw9o6fhqS4x4txewdeibeZr8G5b639qHQ18FXdD6?filename=phoca_thumb_l_image03_grd.png"
+            },
+            { "src": "/images/portfolio/lg/portfolio-02.jpg" },
+            { "src": "/images/portfolio/lg/portfolio-03.jpg" }
+        ],
+        "authors": [
+            {
+                "id": 1,
+                "name": "Mark Jordan",
+                "slug": "/author",
+                "image": { "src": "/images/client/client-2.png" }
+            }
+        ]
+    },
+    {
+        "id": "912f5295-9f3b-40c4-82c0-833fb33e36d7",
+        "title": "curso de seila oq",
+        "slug": "curso-de-seila-oq",
+        "published_at": "20-JUN-2021 08:03:00",
+        "date": "06-20-2022",
+        "approved": true,
+        "coursePlaylist": [
+            {
+                "cid": "QmWWh6MLXVWELakwRkMbMt8jM1gNpYaV1c52BQmwNku7x3",
+                "lectureName": "primeira aula",
+                "lectureBio": "kkk",
+                "file": "https://ipfs.io/ipfs/QmWWh6MLXVWELakwRkMbMt8jM1gNpYaV1c52BQmwNku7x3?filename=aQEnggw_460sv.mp4"
+            },
+            {
+                "lectureName": "primeira aula",
+                "lectureBio": "kkk",
+                "file": "https://ipfs.io/ipfs/QmWWh6MLXVWELakwRkMbMt8jM1gNpYaV1c52BQmwNku7x3?filename=aQEnggw_460sv.mp4",
+                "cid": "QmWWh6MLXVWELakwRkMbMt8jM1gNpYaV1c52BQmwNku7x3"
+            }
+        ],
+        "thumbnail": "https://ipfs.io/ipfs/QmYfo8Hw9o6fhqS4x4txewdeibeZr8G5b639qHQ18FXdD6?filename=phoca_thumb_l_image03_grd.png",
+        "courseBio": "bklśdajfgçlkdsahjfklçds",
+        "price": { "amount": 39.99, "currency": "USDC" },
+        "categories": ["video", "file"],
+        "tagsArr": [
+            [
+                { "title": "blockchain", "slug": "blockchain" },
+                { "title": "web3", "slug": "web3" },
+                { "title": "crypto", "slug": "crypto" }
+            ]
+        ],
+        "tags": [[{ "title": "nftcollector", "slug": "nftcollector" }]],
+        "owner": {
+            "name": "Brodband",
+            "slug": "/author",
+            "image": { "src": "/images/client/client-1.png" }
+        },
+        "collection": {
+            "name": "Art Decco",
+            "slug": "/collection",
+            "image": { "src": "/images/client/client-2.png" },
+            "total_sale": "2500,000"
+        },
+        "content": [
+            "Lesson 1 - What is DAO",
+            "Lesson 2 - How it Works",
+            "Lesson 3 - Getting your hands dirty",
+            "Lesson 4 - Practical use cases"
+        ],
+        "video_url": "https://ipfs.io/ipfs/QmWWh6MLXVWELakwRkMbMt8jM1gNpYaV1c52BQmwNku7x3?filename=aQEnggw_460sv.mp4",
+        "images": [
+            {
+                "src": "https://ipfs.io/ipfs/QmYfo8Hw9o6fhqS4x4txewdeibeZr8G5b639qHQ18FXdD6?filename=phoca_thumb_l_image03_grd.png"
+            },
+            { "src": "/images/portfolio/lg/portfolio-02.jpg" },
+            { "src": "/images/portfolio/lg/portfolio-03.jpg" }
+        ],
+        "authors": [
+            {
+                "id": 1,
+                "name": "Mark Jordan",
+                "slug": "/author",
+                "image": { "src": "/images/client/client-2.png" }
+            }
+        ]
+    },
+    {
+        "id": "a833d768-7dc6-44af-8197-ff6e8a34bd96",
+        "title": "curso de seila oq",
+        "slug": "curso-de-seila-oq",
+        "published_at": "20-JUN-2021 08:03:00",
+        "date": "06-20-2022",
+        "approved": true,
+        "coursePlaylist": [
+            {
+                "cid": "QmWWh6MLXVWELakwRkMbMt8jM1gNpYaV1c52BQmwNku7x3",
+                "lectureName": "primeira aula",
+                "lectureBio": "kkk",
+                "file": "https://ipfs.io/ipfs/QmWWh6MLXVWELakwRkMbMt8jM1gNpYaV1c52BQmwNku7x3?filename=aQEnggw_460sv.mp4"
+            },
+            {
+                "lectureName": "primeira aula",
+                "lectureBio": "kkk",
+                "file": "https://ipfs.io/ipfs/QmWWh6MLXVWELakwRkMbMt8jM1gNpYaV1c52BQmwNku7x3?filename=aQEnggw_460sv.mp4",
+                "cid": "QmWWh6MLXVWELakwRkMbMt8jM1gNpYaV1c52BQmwNku7x3"
+            }
+        ],
+        "thumbnail": "https://ipfs.io/ipfs/QmYfo8Hw9o6fhqS4x4txewdeibeZr8G5b639qHQ18FXdD6?filename=phoca_thumb_l_image03_grd.png",
+        "courseBio": "bklśdajfgçlkdsahjfklçds",
+        "price": { "amount": 39.99, "currency": "USDC" },
+        "categories": ["video", "file"],
+        "tagsArr": [
+            [
+                { "title": "blockchain", "slug": "blockchain" },
+                { "title": "web3", "slug": "web3" },
+                { "title": "crypto", "slug": "crypto" }
+            ]
+        ],
+        "tags": [[{ "title": "nftcollector", "slug": "nftcollector" }]],
+        "owner": {
+            "name": "Brodband",
+            "slug": "/author",
+            "image": { "src": "/images/client/client-1.png" }
+        },
+        "collection": {
+            "name": "Art Decco",
+            "slug": "/collection",
+            "image": { "src": "/images/client/client-2.png" },
+            "total_sale": "2500,000"
+        },
+        "content": [
+            "Lesson 1 - What is DAO",
+            "Lesson 2 - How it Works",
+            "Lesson 3 - Getting your hands dirty",
+            "Lesson 4 - Practical use cases"
+        ],
+        "video_url": "https://ipfs.io/ipfs/QmWWh6MLXVWELakwRkMbMt8jM1gNpYaV1c52BQmwNku7x3?filename=aQEnggw_460sv.mp4",
+        "images": [
+            {
+                "src": "https://ipfs.io/ipfs/QmYfo8Hw9o6fhqS4x4txewdeibeZr8G5b639qHQ18FXdD6?filename=phoca_thumb_l_image03_grd.png"
+            },
+            { "src": "/images/portfolio/lg/portfolio-02.jpg" },
+            { "src": "/images/portfolio/lg/portfolio-03.jpg" }
+        ],
+        "authors": [
+            {
+                "id": 1,
+                "name": "Mark Jordan",
+                "slug": "/author",
+                "image": { "src": "/images/client/client-2.png" }
+            }
+        ]
+    },
+    {
+        "id": "3b78bb20-d049-470d-b2e1-0d4414ec0350",
+        "title": "teste-1",
+        "slug": "teste-1",
+        "published_at": "20-JUN-2021 08:03:00",
+        "date": "06-20-2022",
+        "approved": true,
+        "coursePlaylist": [
+            {
+                "lectureName": "primeira aula",
+                "lectureBio": "fasdfdsfsd",
+                "file": "https://ipfs.io/ipfs/QmR7QCRRi6ui7scxTRHQpzfb1t97vhYSmt1ZCHiwoz4wr6?filename=aA0pqyd_460sv.mp4",
+                "cid": "QmR7QCRRi6ui7scxTRHQpzfb1t97vhYSmt1ZCHiwoz4wr6"
+            }
+        ],
+        "thumbnail": "https://ipfs.io/ipfs/QmUnBw2oDjNkG1npKu4Btnka78rLrjBJuigq157ZoXyv1S?filename=Screenshot from 2022-10-07 15-24-33.png",
+        "courseBio": "bla bla",
+        "price": { "amount": 39.99, "currency": "USDC" },
+        "categories": ["video", "file"],
+        "tagsArr": [
+            [
+                { "title": "blockchain", "slug": "blockchain" },
+                { "title": "web3", "slug": "web3" },
+                { "title": "crypto", "slug": "crypto" }
+            ]
+        ],
+        "tags": [[{ "title": "nftcollector", "slug": "nftcollector" }]],
+        "owner": {
+            "name": "Brodband",
+            "slug": "/author",
+            "image": { "src": "/images/client/client-1.png" }
+        },
+        "collection": {
+            "name": "Art Decco",
+            "slug": "/collection",
+            "image": { "src": "/images/client/client-2.png" },
+            "total_sale": "2500,000"
+        },
+        "content": [
+            "Lesson 1 - What is DAO",
+            "Lesson 2 - How it Works",
+            "Lesson 3 - Getting your hands dirty",
+            "Lesson 4 - Practical use cases"
+        ],
+        "video_url": "https://ipfs.io/ipfs/QmR7QCRRi6ui7scxTRHQpzfb1t97vhYSmt1ZCHiwoz4wr6?filename=aA0pqyd_460sv.mp4",
+        "images": [
+            {
+                "src": "https://ipfs.io/ipfs/QmUnBw2oDjNkG1npKu4Btnka78rLrjBJuigq157ZoXyv1S?filename=Screenshot from 2022-10-07 15-24-33.png"
+            },
+            { "src": "/images/portfolio/lg/portfolio-02.jpg" },
+            { "src": "/images/portfolio/lg/portfolio-03.jpg" }
+        ],
+        "authors": [
+            {
+                "id": 1,
+                "name": "Mark Jordan",
+                "slug": "/author",
+                "image": { "src": "/images/client/client-2.png" }
+            }
+        ]
+    },
+    {
+        "id": "c2059055-1429-4967-b37a-5ecdd92e205d",
+        "title": "Javascript Course",
+        "slug": "Javascript-Course",
+        "published_at": "20-JUN-2021 08:03:00",
+        "date": "06-20-2022",
+        "approved": true,
+        "coursePlaylist": [
+            {
+                "lectureName": "primeira aula",
+                "lectureBio": "fsdafsd",
+                "file": "https://ipfs.io/ipfs/Qme3PKwd76UzNmXyKNTSwfSPzNcXmx7n5rprvJ1T9ErKce?filename=abvbj2O_460sv.mp4",
+                "cid": "Qme3PKwd76UzNmXyKNTSwfSPzNcXmx7n5rprvJ1T9ErKce"
+            },
+            {
+                "lectureName": "segunda aula",
+                "lectureBio": "sdfsd",
+                "file": "https://ipfs.io/ipfs/Qmd17drdPq4q6zMLm98NGBGhqHpJngrDXFmRtFKdP4tuXa?filename=aPgGNmR_460sv.mp4",
+                "cid": "Qmd17drdPq4q6zMLm98NGBGhqHpJngrDXFmRtFKdP4tuXa"
+            }
+        ],
+        "thumbnail": "https://ipfs.io/ipfs/QmYsCZUTsMzsLb9MqarwzYByYVz9MGH7DmZmGsue2Q76bK?filename=javascriptfull.png",
+        "courseBio": "fsafds",
+        "price": { "amount": 39.99, "currency": "USDC" },
+        "categories": ["video", "file"],
+        "tagsArr": [
+            [
+                { "title": "web3", "slug": "web3" },
+                { "title": "crypto", "slug": "crypto" },
+                { "title": "programming", "slug": "programming" }
+            ]
+        ],
+        "tags": [[{ "title": "nftcollector", "slug": "nftcollector" }]],
+        "owner": {
+            "name": "Brodband",
+            "slug": "/author",
+            "image": { "src": "/images/client/client-1.png" }
+        },
+        "collection": {
+            "name": "Art Decco",
+            "slug": "/collection",
+            "image": { "src": "/images/client/client-2.png" },
+            "total_sale": "2500,000"
+        },
+        "content": [
+            "Lesson 1 - What is DAO",
+            "Lesson 2 - How it Works",
+            "Lesson 3 - Getting your hands dirty",
+            "Lesson 4 - Practical use cases"
+        ],
+        "video_url": "https://ipfs.io/ipfs/Qme3PKwd76UzNmXyKNTSwfSPzNcXmx7n5rprvJ1T9ErKce?filename=abvbj2O_460sv.mp4",
+        "images": [
+            {
+                "src": "https://ipfs.io/ipfs/QmYsCZUTsMzsLb9MqarwzYByYVz9MGH7DmZmGsue2Q76bK?filename=javascriptfull.png"
+            },
+            { "src": "/images/portfolio/lg/portfolio-02.jpg" },
+            { "src": "/images/portfolio/lg/portfolio-03.jpg" }
+        ],
+        "authors": [
+            {
+                "id": 1,
+                "name": "Mark Jordan",
+                "slug": "/author",
+                "image": { "src": "/images/client/client-2.png" }
+            }
+        ]
+    },
+    {
+        "id": "5039d4f6-2428-4fa6-813c-b2ee93c188d3",
+        "title": "how to create bla bla",
+        "slug": "how-to-create-bla-bla",
+        "published_at": "20-JUN-2021 08:03:00",
+        "date": "06-20-2022",
+        "approved": true,
+        "coursePlaylist": [
+            {
+                "lectureName": "fsdfsd",
+                "lectureBio": "fsdfsd",
+                "file": "https://ipfs.io/ipfs/QmWWh6MLXVWELakwRkMbMt8jM1gNpYaV1c52BQmwNku7x3?filename=aQEnggw_460sv.mp4",
+                "cid": "QmWWh6MLXVWELakwRkMbMt8jM1gNpYaV1c52BQmwNku7x3"
+            },
+            {
+                "lectureName": "segunda aula",
+                "lectureBio": "423423",
+                "file": "https://ipfs.io/ipfs/QmVivZ7cuHf2HL9m7dHmtqi4ZFYJ8PFrW3TokMcbSBwaSB?filename=angPZrE_460sv.mp4",
+                "cid": "QmVivZ7cuHf2HL9m7dHmtqi4ZFYJ8PFrW3TokMcbSBwaSB"
+            }
+        ],
+        "thumbnail": "https://ipfs.io/ipfs/QmeyRZWrtcjuJtgvhARPKLrNaPxRRpW6ztFVCRrBmUqJC3?filename=Screenshot from 2022-09-29 16-56-27.png",
+        "courseBio": "fsdafsd",
+        "price": { "amount": 39.99, "currency": "USDC" },
+        "categories": ["video", "file"],
+        "tagsArr": [
+            [
+                { "title": "web3", "slug": "web3" },
+                { "title": "programming", "slug": "programming" }
+            ]
+        ],
+        "tags": [[{ "title": "nftcollector", "slug": "nftcollector" }]],
+        "owner": {
+            "name": "Brodband",
+            "slug": "/author",
+            "image": { "src": "/images/client/client-1.png" }
+        },
+        "collection": {
+            "name": "Art Decco",
+            "slug": "/collection",
+            "image": { "src": "/images/client/client-2.png" },
+            "total_sale": "2500,000"
+        },
+        "content": [
+            "Lesson 1 - What is DAO",
+            "Lesson 2 - How it Works",
+            "Lesson 3 - Getting your hands dirty",
+            "Lesson 4 - Practical use cases"
+        ],
+        "video_url": "https://ipfs.io/ipfs/QmWWh6MLXVWELakwRkMbMt8jM1gNpYaV1c52BQmwNku7x3?filename=aQEnggw_460sv.mp4",
+        "images": [
+            {
+                "src": "https://ipfs.io/ipfs/QmeyRZWrtcjuJtgvhARPKLrNaPxRRpW6ztFVCRrBmUqJC3?filename=Screenshot from 2022-09-29 16-56-27.png"
             },
             { "src": "/images/portfolio/lg/portfolio-02.jpg" },
             { "src": "/images/portfolio/lg/portfolio-03.jpg" }
