@@ -19,6 +19,7 @@ const Content = ({
     authors,
     placeBid,
     url,
+    cid,
 }) => {
     const [showBidModal, setShowBidModal] = useState(false);
     const handleBidModal = () => {
@@ -39,8 +40,12 @@ const Content = ({
                             <img
                                 src={image.src}
                                 alt={image?.alt || "NFT_portfolio"}
-                                width="533"
-                                height="533"
+                                style={{
+                                    width: "300px",
+                                    height: "200px",
+                                }}
+                                width={533}
+                                height={533}
                             />
                         </Anchor>
                     )}
@@ -56,7 +61,7 @@ const Content = ({
                         <div key={author.id}>{author.name}</div>
                     ))}
                 </div>
-                <Anchor path={`${url}/${slug}`}>
+                <Anchor path={`${url}/${slug}?cid=${cid}`}>
                     <span className="product-name">{title}</span>
                 </Anchor>
                 <ContentInfo price={price} />
