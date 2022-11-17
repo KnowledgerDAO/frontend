@@ -36,6 +36,8 @@ function CourseForm({ changeTitle, index, addVideoCourse }) {
             setState({ ...state, file: e.target.files[0] });
             console.log(state);
         }
+
+        console.log(state.file)
     };
 
     const onSubmit = async (data, e) => {
@@ -54,11 +56,9 @@ function CourseForm({ changeTitle, index, addVideoCourse }) {
             // setSelectedImage();
         }
 
-        const { url } = await uploadFile({ file: state.file });
+        const { url, cid } = await uploadFile({ file: state.file });
 
-        console.log(url);
-
-        addVideoCourse({ ...data, file: url });
+        addVideoCourse({ ...data, file: url, cid });
     };
 
     return (
@@ -83,7 +83,7 @@ function CourseForm({ changeTitle, index, addVideoCourse }) {
                                         <div className="brows-file-wrapper">
                                             <input
                                                 name="file"
-                                                id="file"
+                                                id={`file${index}`}
                                                 type="file"
                                                 className="inputfile"
                                                 data-multiple-caption="{count} files selected"
@@ -92,7 +92,7 @@ function CourseForm({ changeTitle, index, addVideoCourse }) {
                                             />
 
                                             <label
-                                                htmlFor="file"
+                                                htmlFor={`file${index}`}
                                                 title="No File Choosen"
                                             >
                                                 <i className="feather-upload" />
