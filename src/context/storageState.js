@@ -2,7 +2,7 @@ import React from "react";
 import StorageContext from "./storageContext";
 import axios from "axios";
 import { create } from "ipfs-http-client";
-const client = create(new URL("http://20.121.24.4:5001"));
+const client = create(new URL(process.env.IPFS_HOST));
 
 function StorageState({ children }) {
     const uploadFile = async ({ file }) => {
@@ -10,11 +10,11 @@ function StorageState({ children }) {
 
         const url = `https://ipfs.io/ipfs/${obj.cid}?filename=${file.name}`;
 
-        return { url };
+        return { url, cid: `${obj.cid}` };
     };
 
     const saveCourse = async (data) => {
-        await axios.post("http://localhost:3000/api", data);
+        await axios.post(process.env.IPFS_BACKEND_API_URL, data);
     };
 
     const retrieveFile = () => {};
