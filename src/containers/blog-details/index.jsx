@@ -6,9 +6,11 @@ import { ImageType } from "@utils/types";
 import ReactPlayer from "react-player";
 import VideoPlayer from "@components/video-player";
 
-const BlogDetailsArea = ({ className, post }) => {
+const BlogDetailsArea = ({ className, post, cid }) => {
     const date = new Date(post.date);
-    console.log(post)
+
+    const video = post.coursePlaylist.filter((c) => c.cid === cid)[0];
+
     return (
         <div className={clsx("blog-details-area", className)}>
             <div className="blog-content-top">
@@ -20,11 +22,14 @@ const BlogDetailsArea = ({ className, post }) => {
             </div>
             <div className="bd-thumbnail">
                 <div className="large-img mb--30">
-                    <VideoPlayer
-                        url={post.video_url}
-                        width={919}
-                        height={517}
-                    />
+                    {video && (
+                        <VideoPlayer
+                            url={video.file}
+                            width={919}
+                            thumbnail={post.thumbnail}
+                            height={517}
+                        />
+                    )}
                 </div>
             </div>
             {/* <div
