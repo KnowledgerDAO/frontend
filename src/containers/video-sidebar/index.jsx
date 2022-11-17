@@ -10,14 +10,21 @@ const VideoSidebar = ({
     recentPosts,
     tags,
     rootPage,
+    post,
+    coursePlaylist,
 }) => {
     // const cat = categories.map((c) => ({ title: c, slug: c }));
 
-
+    console.log(post.slug);
     return (
         <aside className={clsx("rwt-sidebar", className)}>
             {categories?.length > 0 && (
-                <CategoryWidget categories={categories} rootPage={rootPage} />
+                <CategoryWidget
+                    categories={categories}
+                    rootPage={rootPage}
+                    coursePlaylist={coursePlaylist}
+                    slug={post.slug}
+                />
             )}
 
             {tags?.length > 0 && <TagWidget tags={tags} rootPage={rootPage} />}
