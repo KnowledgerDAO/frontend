@@ -131,6 +131,7 @@ const ExploreContentArea = ({ className, space, data, path }) => {
                                         image={prod.images?.[0]}
                                         authors={prod.authors}
                                         url={path}
+                                        cid={prod.coursePlaylist[0].cid}
                                     />
                                 </div>
                             ))}
